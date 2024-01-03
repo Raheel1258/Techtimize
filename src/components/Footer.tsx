@@ -7,16 +7,16 @@ import { FaWhatsapp } from "react-icons/fa";
 const Footer: React.FC = () => {
   return (
     <footer className="bg-[#F8F8F8]">
-      <div className="flex lg:flex-row md:flex-row flex-col xl:gap-[93px] lg:gap-[40px] md:gap-[35px] xl:h-[603px] justify-between">
-        <div className="pl-[19px] xl:pl-[64px] md:pl-[46px]">
+      <div className="flex lg:flex-row md:flex-row sm:flex-row flex-col xl:gap-[93px] lg:gap-[40px] md:gap-[35px] xl:h-[603px] justify-between">
+        <div className="pl-[19px] xl:pl-[64px] md:pl-[46px] sm:pl-[46px] md:w-[312px] sm:w-[250px]">
           <Image
             src="/images/logo.png"
             width={263}
             height={94}
-            className="lg:w-[263px] lg:h-[94px] w-[174px] h-[65px] mt-[67px] xl:mt-[77px] md:mt-[42px]"
+            className="xl:w-[263px] xl:h-[94px] lg:w-[263px] lg:h-[94px] md:w-[182px] md:h-[64px] sm:w-[182px] sm:h-[64px] w-[174px] h-[65px] mt-[67px] xl:mt-[77px] md:mt-[42px]"
             alt={"techtimize-logo"}
           />
-          <p className="text-[14px] mt-[12px] lg:mt-[41px] mr-[51px] md:mr-0 lg:mr-0 xl:w-[316px] md:w-[240px]">
+          <p className="text-[14px] lg:text-[14px] md:text-[12px] sm:text-[12px] mt-[12px] lg:mt-[41px] mr-[51px] md:mr-0 lg:mr-0 xl:w-[316px] md:w-[191px] sm:w-[191px]">
             At Techtimize, we specialize in JS frameworks, .Net, machine
             learning, and AI. We offer a range of services to help businesses of
             all sizes achieve their goals.
@@ -44,11 +44,11 @@ const Footer: React.FC = () => {
             />
           </div>
         </div>
-        <div className="pl-[19px] md:pl-0 lg:pl-0 md:w-[156px] xl:w-[156px]">
-          <h3 className="text-[25px] lg:text-[25px] md:text-[16px] font-bold mt-[67px] xl:mt-[87px] lg:mt-[160px] md:mt-[110px] mb-[26px]">
+        <div className="pl-[19px] sm:pl-0 md:pl-0 lg:pl-0 md:w-[150px] sm:w-[100px] xl:w-[156px]">
+          <h3 className="text-[25px] lg:text-[25px] md:text-[16px] sm:text-[16px] font-bold mt-[67px] xl:mt-[87px] lg:mt-[160px] md:mt-[110px] sm:mt-[130px] mb-[26px]">
             Quick Links
           </h3>
-          <ul className="text-[15px] lg:text-[15px] md:text-[12px] gap-[10px] flex flex-col">
+          <ul className="text-[15px] lg:text-[15px] md:text-[12px] sm:text-[12px] gap-[10px] flex flex-col">
             <li>Home</li>
             <li>Hiring Staff</li>
             <li>Services</li>
@@ -57,11 +57,11 @@ const Footer: React.FC = () => {
             <li>Contact</li>
           </ul>
         </div>
-        <div className="pl-[19px] md:pl-0 lg:pl-0">
-          <h3 className="text-[25px] lg:text-[25px] md:text-[16px] font-bold mt-[67px] xl:mt-[87px] lg:mt-[160px] md:mt-[110px] mb-[26px]">
+        <div className="pl-[19px] md:pl-0 sm:pl-0 lg:pl-0 md:w-[190px] sm:w-[134px]">
+          <h3 className="text-[25px] lg:text-[25px] md:text-[16px] sm:text-[16px] font-bold mt-[67px] xl:mt-[87px] lg:mt-[160px] md:mt-[110px] sm:mt-[130px] mb-[26px]">
             Services
           </h3>
-          <ul className="text-[15px] lg:text-[15px] md:text-[12px] gap-[10px] flex flex-col md:mb-[51px]">
+          <ul className="text-[15px] lg:text-[15px] md:text-[12px] sm:text-[12px] gap-[10px] flex flex-col md:mb-[51px]">
             <li>Artificial Intelligence</li>
             <li>Mobile App Development</li>
             <li>Web App Development</li>
@@ -71,11 +71,11 @@ const Footer: React.FC = () => {
             <li>Staff Augmentation</li>
           </ul>
         </div>
-        <div className="pl-[19px] lg:pl-0 md:pl-0 md:pr-[40px] lg:pr-5 xl:w-[340px]">
-          <h3 className="text-[25px] lg:text-[25px] md:text-[16px] font-bold mt-[67px] xl:mt-[87px] lg:mt-[160px] md:mt-[110px] mb-[26px]">
+        <div className="pl-[19px] lg:pl-0 md:pl-0 sm:pl-0 lg:pr-5 xl:w-[340px] lg:w-[173px] sm:w-[173px]">
+          <h3 className="text-[25px] lg:text-[25px] md:text-[16px] sm:text-[16px] font-bold mt-[67px] xl:mt-[87px] lg:mt-[160px] sm:mt-[130px] md:mt-[110px] mb-[26px] lg:w-[156px]">
             Get in Touch
           </h3>
-          <ul className="text-[14px] md:text-[12px] xl:text-[15px] flex flex-col gap-[21px] mb-[51.79px]">
+          <ul className="text-[14px] md:text-[12px] sm:text-[12px] xl:text-[15px] flex flex-col gap-[21px] mb-[51.79px]">
             <li className="flex gap-[9px] items-center">
               <Image
                 src={"/images/phone.png"}

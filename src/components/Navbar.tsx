@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import React, { useState } from "react";
+import { links } from "@/constants/nav-links";
 
 const Navbar: React.FC = () => {
   const [activeMenuItem, setActiveMenuItem] = useState("Home");
@@ -8,35 +9,6 @@ const Navbar: React.FC = () => {
   const handleMenuItemClick = (menuItem: string) => {
     setActiveMenuItem(menuItem);
   };
-
-  const links = [
-    {
-      id: 0,
-      link: "Home",
-    },
-    {
-      id: 1,
-      link: "Hiring Staff",
-    },
-    {
-      id: 2,
-      link: "About",
-    },
-    {
-      id: 3,
-      link: "Services",
-    },
-    {
-      id: 4,
-      link: "Projects",
-    },
-    {
-      id: 5,
-      link: "Careers",
-    },
-  ];
-
-  console.log("Selected Text: ", activeMenuItem);
 
   return (
     <header>
