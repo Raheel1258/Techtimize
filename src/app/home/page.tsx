@@ -6,6 +6,7 @@ import { stats } from "@/constants/stats";
 import FilledButton from "@/components/FilledButton";
 import { services } from "@/constants/services";
 import ServiceCard from "./components/ServiceCard";
+import ProjectLogoSlider from "./components/ProjectLogoSlider";
 
 const Home = () => {
   return (
@@ -60,9 +61,11 @@ const Home = () => {
           );
         })}
       </div>
-      <div className="border h-[200px]">Projects Logo Slider Component</div>
-      <div className="flex xl:flex-row md:flex-row sm:flex-row flex-col xl:gap-[135px] lg:gap-[135px] justify-between">
-        <div className="border xl:ml-[75px] md:ml-[47px] sm:ml-[47px] ml-[16px]">
+      <div className="pt-20 pb-10">
+        <ProjectLogoSlider />
+      </div>
+      <div className="flex xl:flex-row md:flex-row sm:flex-row flex-col xl:gap-[135px] lg:gap-[135px] justify-between xl:mb-[217px]">
+        <div className="xl:ml-[75px] md:ml-[47px] sm:ml-[47px] ml-[16px]">
           <p className="text-[#069AD8] text-[16px] xl:mt-[112px] md:mt-[76px] sm:mt-[76px] mt-[48px] xl:mb-[11px] mb-[5px]">
             What do we do?
           </p>
@@ -81,7 +84,7 @@ const Home = () => {
             className="xl:w-[131px] xl:h-[46px] md:w-[131px] md:h-[44px] sm:w-[131px] sm:h-[44px] w-[103px] h-[37px] xl:text-[16px] md:text-[15px] sm:text-[15px] text-[14px]"
           />
         </div>
-        <div className="border xl:mr-[70px] lg:mr-[70px] md:mr-[46.67px] sm:mr-[46.67px] md:mt-[84px] sm:mt-[84px] xl:mt-[98px] mt-[55px]">
+        <div className="xl:mr-[70px] lg:mr-[70px] md:mr-[46.67px] sm:mr-[46.67px] md:mt-[84px] sm:mt-[84px] xl:mt-[98px] mt-[55px]">
           <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-2 xl:gap-[26px] md:gap-[12px] sm:gap-[12px] gap-[15px] md:px-0 px-[16px]">
             {services?.map((item) => {
               return (
