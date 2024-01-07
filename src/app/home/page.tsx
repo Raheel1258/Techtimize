@@ -7,6 +7,8 @@ import FilledButton from "@/components/FilledButton";
 import { services } from "@/constants/services";
 import ServiceCard from "./components/ServiceCard";
 import ProjectLogoSlider from "./components/ProjectLogoSlider";
+import PortfolioCard from "@/components/PortfolioCard";
+import PortfolioSlider from "@/components/PortfolioSlider/PortfolioSlider";
 
 const Home = () => {
   return (
@@ -98,6 +100,15 @@ const Home = () => {
             })}
           </div>
         </div>
+      </div>
+      <div className="pl-[54px]">
+        <p className="text-[#069AD8] text-[16px] xl:mt-[112px] md:mt-[76px] sm:mt-[76px] mt-[48px] xl:mb-[11px] mb-[5px]">
+          Our Work
+        </p>
+        <h3 className="xl:text-[31px] lg:text-[31px] text-[28px] font-bold xl:mb-[54px] mb-[19px]">
+          Our Portfolio
+        </h3>
+        <PortfolioSlider />
       </div>
     </>
   );

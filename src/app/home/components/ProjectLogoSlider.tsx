@@ -28,17 +28,22 @@ class ProjectLogoSlider extends Component {
         {
           breakpoint: 1024,
           settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            infinite: true,
-            dots: false,
+            slidesToShow: 4,
+            slidesToScroll: 4,
           },
         },
         {
           breakpoint: 768,
           settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
+            slidesToShow: 4,
+            slidesToScroll: 4,
+          },
+        },
+        {
+          breakpoint: 820,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 4,
           },
         },
         {
@@ -69,32 +74,32 @@ class ProjectLogoSlider extends Component {
     return (
       <Slider {...settings}>
         <div>
-          <div className="flex items-center justify-center xl:w-[251px] xl:h-[89px] lg:w-[251px] lg:h-[89px] md:w-[251px] md:h-[89px] w-[136px] h-[48.89px] border">
+          <div className="flex items-center justify-center lg:w-[251px] lg:h-[104px] md:w-[189px] md:h-[66px] w-[156px] h-[49px]">
             <Image
               src={"/images/salesMind.png"}
               alt={"sales mind"}
               width={89}
               height={89}
-              className="lg:w-[89px] lg:h-[89px] md:w-[89px] md:h-[89px] w-[43.56px] h-[43.56px]"
+              className="lg:w-[89px] lg:h-[89px] md:w-[44px] md:h-[44px] w-[43.56px] h-[43.56px]"
             />
-            <p className="xl:text-[25px] lg:text-[25px] md:text-[25px] font-bold">
+            <p className="xl:text-[25px] lg:text-[25px] md:text-[20px] font-bold">
               Sales Mind
             </p>
           </div>
         </div>
         <div>
-          <div className="border flex items-center justify-center w-[110px] h-[49px] lg:w-[201px] lg:h-[90px] md:w-[251px] md:h-[89px]">
+          <div className="flex items-center justify-center lg:w-[251px] lg:h-[104px] md:w-[189px] md:h-[66px] w-[156px] h-[49px]">
             <Image
               src={"/images/sunndio.png"}
               alt={"sunndio"}
               width={201}
               height={90}
-              className="w-[110px] h-[49px] lg:w-[201px] lg:h-[90px] md:w-[201px] md:h-[90px]"
+              className="w-[110px] h-[49px] lg:w-[201px] lg:h-[90px] md:w-[159px] md:h-[66px]"
             />
           </div>
         </div>
         <div>
-          <div className="flex items-center justify-center border lg:w-[200px] lg:h-[104px] md:w-[251px] md:h-[89px] h-[49px] w-[100px]">
+          <div className="flex items-center justify-center lg:w-[251px] lg:h-[104px] md:w-[189px] md:h-[66px] w-[156px] h-[49px]">
             <Image
               src={"/images/check.png"}
               alt={"check ai"}
@@ -105,26 +110,37 @@ class ProjectLogoSlider extends Component {
           </div>
         </div>
         <div>
-          <div className="flex items-center justify-center xl:gap-[21px] lg:gap-[21px] gap-[10px] xl:w-[251px] xl:h-[89px] lg:w-[251px] lg:h-[89px] md:w-[251px] md:h-[89px] w-[156px] h-[49px] border">
+          <div className="flex items-center justify-center xl:gap-[21px] lg:gap-[21px] gap-[10px]  lg:w-[251px] lg:h-[104px] md:w-[189px] md:h-[66px] w-[156px] h-[49px]">
             <Image
               src={"/images/bitcoin.png"}
               alt={"bitcoin"}
               width={63}
               height={63}
-              className="lg:w-[63px] lg:h-[63px] md:w-[63px] md:h-[63px] w-[40px] h-[40px]"
+              className="lg:w-[63px] lg:h-[63px] md:w-[36px] md:h-[36px] w-[40px] h-[40px]"
             />
-            <p className="xl:text-[25px] lg:text-[25px] md:text-[25px] font-bold">
+            <p className="xl:text-[25px] lg:text-[25px] md:text-[20px] font-bold">
               Bitcoin tribe
             </p>
           </div>
         </div>
         <div>
-          <div className="flex items-center justify-center xl:w-[251px] xl:h-[89px] lg:w-[251px] lg:h-[89px] md:w-[251px] md:h-[89px] border">
+          <div className="flex items-center justify-center lg:w-[251px] lg:h-[104px] md:w-[189px] md:h-[66px] w-[156px] h-[49px]">
             <Image
               src={"/images/senSights.png"}
               alt={"sen sights"}
               width={239}
               height={59}
+            />
+          </div>
+        </div>
+        <div>
+          <div className="flex items-center justify-center lg:w-[251px] lg:h-[104px] md:w-[189px] md:h-[66px] w-[156px] h-[49px]">
+            <Image
+              src={"/images/fresha.png"}
+              alt={"fresha"}
+              width={96}
+              height={31}
+              className="lg:w-[140px] lg:h-[51px] w-[96px] h-[31px]"
             />
           </div>
         </div>
