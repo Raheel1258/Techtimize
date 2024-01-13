@@ -12,22 +12,22 @@ const TestimonialCard = ({ testimonialData }: any) => {
           height={86}
         />
       </div>
-      <p className="w-[240px] lg:w-[365px] lg:text-[16px] ml-[24px] lg:ml-[71px] mt-[18px] text-[14px] text-[#727272]">
+      <p className="w-[240px] lg:w-[365px] lg:text-[16px] ml-[24px] lg:ml-[71px] mt-[18px] lg:mt-[25px] text-[14px] text-[#727272]">
         {testimonialData?.review}
       </p>
-      <div className="flex mx-[24px] mt-[32px] gap-[10px]">
+      <div className="flex ml-[24px] lg:ml-[71px] lg:mt-[49px] mt-[32px] gap-[10px]">
         <Image
           src={testimonialData?.flag}
           alt={"flag"}
           width={30}
           height={25}
-          className="mb-[33px]"
+          className="mb-[33px] lg:w-[39px] lg:h-[34px]"
         />
         <div>
-          <p className="text-[16px] font-semibold text-[#727272]">
+          <p className="text-[16px] lg:text-[19px] font-semibold text-[#727272]">
             {testimonialData?.user}
           </p>
-          <p className="text-[12px] text-[#727272]">
+          <p className="text-[12px] lg:text-[16px] lg:mb-[10px] text-[#727272]">
             {testimonialData?.country}
           </p>
           <Image
@@ -35,6 +35,7 @@ const TestimonialCard = ({ testimonialData }: any) => {
             alt={"ratings"}
             width={81}
             height={18}
+            className="lg:w-[100px] lg:h-[20.9px]"
           />
         </div>
       </div>

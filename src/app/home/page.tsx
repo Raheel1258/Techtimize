@@ -68,9 +68,9 @@ const Home = () => {
       <div className="pt-20 pb-10">
         <ProjectLogoSlider />
       </div>
-      <div className="flex xl:flex-row md:flex-row sm:flex-row flex-col xl:gap-[135px] lg:gap-[135px] justify-between xl:mb-[217px]">
+      <div className="flex xl:flex-row md:flex-row sm:flex-row flex-col xl:gap-[135px] lg:gap-[135px] justify-between">
         <div className="xl:ml-[75px] md:ml-[47px] sm:ml-[47px] ml-[16px]">
-          <p className="text-[#069AD8] text-[16px] xl:mt-[112px] md:mt-[76px] sm:mt-[76px] mt-[48px] xl:mb-[11px] mb-[5px]">
+          <p className="text-[#069AD8] text-[16px] xl:mt-[90px] md:mt-[76px] sm:mt-[76px] mt-[48px] xl:mb-[11px] mb-[5px]">
             What do we do?
           </p>
           <h3 className="xl:text-[31px] lg:text-[31px] text-[28px] font-bold xl:mb-[54px] mb-[19px]">
@@ -85,11 +85,11 @@ const Home = () => {
           </p>
           <FilledButton
             text="Book a Quote"
-            className="xl:w-[131px] xl:h-[46px] md:w-[131px] md:h-[44px] sm:w-[131px] sm:h-[44px] w-[103px] h-[37px] xl:text-[16px] md:text-[15px] sm:text-[15px] text-[14px]"
+            className="xl:w-[131px] xl:h-[46px] md:w-[131px] md:h-[44px] sm:w-[131px] sm:h-[44px] w-[103px] h-[37px] xl:text-[16px] md:text-[15px] sm:text-[15px] text-[14px] md:mb-[60.61px]"
           />
         </div>
         <div className="xl:mr-[70px] lg:mr-[70px] md:mr-[46.67px] sm:mr-[46.67px] md:mt-[84px] sm:mt-[84px] xl:mt-[98px] mt-[55px]">
-          <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-2 xl:gap-[26px] md:gap-[12px] sm:gap-[12px] gap-[15px] md:px-0 px-[16px]">
+          <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-2 xl:gap-[26px] md:gap-[12px] sm:gap-[12px] gap-[15px] md:px-0 px-[16px] pb-[60.61px]">
             {services?.map((item) => {
               return (
                 <ServiceCard
@@ -103,18 +103,20 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="lg:pl-[54px]">
-        <p className="text-[#069AD8] text-[16px] xl:mt-[112px] md:mt-[76px] sm:mt-[76px] mt-[48px] xl:mb-[11px] mb-[5px] px-[20px]">
+      <div>
+        <p className="text-[#069AD8] lg:ml-[54px] md:ml-[42px] text-[16px] xl:mt-[112px] md:mt-[76px] sm:mt-[76px] mt-[48px] xl:mb-[11px] mb-[5px] px-[20px]">
           Our Work
         </p>
-        <h3 className="xl:text-[31px] lg:text-[31px] text-[28px] font-bold xl:mb-[54px] mb-[19px] px-[20px]">
+        <h3 className="xl:text-[31px] lg:ml-[54px] md:ml-[42px] lg:text-[31px] text-[28px] font-bold xl:mb-[54px] mb-[19px] px-[20px]">
           Our Portfolio
         </h3>
-        <PortfolioSlider />
+        <div className="lg:ml-[54px] lg:px-0 md:px-[18px]">
+          <PortfolioSlider />
+        </div>
         <div className="flex items-center justify-center mt-[96px]">
           <FilledButton
             text="View all Projects"
-            className="w-[200px] h-[60px] text-[16px]"
+            className="lg:w-[200px] lg:h-[60px] w-[160px] h-[52px] md:w-[157px] md:h-[44px] text-[16px]"
           />
         </div>
       </div>
@@ -175,7 +177,7 @@ const Home = () => {
         <h5 className="text-[25px] md:text-[28px] font-semibold mb-[42px] mx-[23px] md:mx-[42px]">
           Client Success Stories
         </h5>
-        <div className="mb-[99px] md:mb-[118px] md:px-[23px]">
+        <div className="mb-[99px] md:mb-[118px] md:px-[23px] lg:mb-[144px]">
           <TestimonialSlider />
         </div>
       </div>

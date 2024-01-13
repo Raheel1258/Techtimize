@@ -74,7 +74,7 @@ class PortfolioSlider extends Component {
       <Slider {...settings}>
         {portfolioData?.map((data) => {
           return (
-            <div key={data?.id}>
+            <div key={data?.id} className="pb-[10px]">
               <PortfolioCard cardData={data} />
             </div>
           );

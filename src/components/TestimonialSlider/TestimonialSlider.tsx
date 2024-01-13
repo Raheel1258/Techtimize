@@ -69,7 +69,7 @@ class TestimonialSlider extends Component {
       <Slider {...settings}>
         {testimonials?.map((data) => {
           return (
-            <div key={data.id}>
+            <div key={data.id} className="pb-[10px]">
               <TestimonialCard testimonialData={data} />
             </div>
           );
