@@ -1,14 +1,10 @@
 "use client";
 import React, { Component } from "react";
+import { testimonials } from "@/constants/testimonialData";
 import Slider from "react-slick";
-import Image from "next/image";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import PortfolioCard from "../PortfolioCard";
-import { portfolioData } from "@/constants/portfolioData";
-import "./style.css";
+import TestimonialCard from "../TestimonialCard";
 
-class PortfolioSlider extends Component {
+class TestimonialSlider extends Component {
   componentDidMount() {
     // You can customize the initialization here if needed
     // For example, you can log something to check if this block is executed
@@ -69,13 +65,12 @@ class PortfolioSlider extends Component {
         },
       ],
     };
-
     return (
       <Slider {...settings}>
-        {portfolioData?.map((data) => {
+        {testimonials?.map((data) => {
           return (
-            <div key={data?.id}>
-              <PortfolioCard cardData={data} />
+            <div key={data.id}>
+              <TestimonialCard testimonialData={data} />
             </div>
           );
         })}
@@ -84,4 +79,4 @@ class PortfolioSlider extends Component {
   }
 }
 
-export default PortfolioSlider;
+export default TestimonialSlider;
