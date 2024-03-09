@@ -2,7 +2,7 @@
 import React, { Component } from "react";
 import { testimonials } from "@/constants/testimonialData";
 import Slider from "react-slick";
-import TestimonialCard from "../TestimonialCard";
+import TestimonialCard from "../TestimonialCard/TestimonialCard";
 
 class TestimonialSlider extends Component {
   componentDidMount() {

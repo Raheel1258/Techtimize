@@ -3,7 +3,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import { links } from "@/constants/nav-links";
 import Link from "next/link";
-import Button from "./Button";
+import Button from "../Button/Button";
 
 const Navbar: React.FC = () => {
   const [activeMenuItem, setActiveMenuItem] = useState("Home");
@@ -14,18 +14,18 @@ const Navbar: React.FC = () => {
 
   return (
     <header>
-      <div className="flex items-center justify-between lg:px-[69px] md:px-[45px] px-[18px] shadow-md xl:h-[135px] lg:h-[90px] h-[79px]">
+      <div className="flex items-center justify-between lg:px-[69px] md:px-[45px] px-[18px] shadow-md xl:h-[80px] lg:h-[90px] h-[79px]">
         <Link href={"/"}>
           <Image
             src="/images/logo.png"
             width={263}
             height={94}
-            className="lg:w-[263px] lg:h-[94px] w-[171px] h-[63px]"
+            className="lg:w-[230px] lg:h-[84px] w-[171px] h-[63px]"
             alt={"techtimize-logo"}
           />
         </Link>
         <nav className="xl:flex lg:hidden items-center gap-[41px] hidden">
-          <ul className="flex items-baseline gap-5 text-[20px] mt-3">
+          <ul className="flex items-baseline gap-5 text-[16px] mt-3">
             {links?.map((item) => {
               return (
                 <Link href={item?.path}>
@@ -51,6 +51,7 @@ const Navbar: React.FC = () => {
           </ul>
           <Button
             text="Get in Touch"
+            textClass="text-[16px]"
             className="bg-[#0B4D8E] text-white px-[27px] py-[15px] rounded-[10px]"
           />
         </nav>

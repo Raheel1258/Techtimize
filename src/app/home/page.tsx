@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import StatCard from "./components/StatCard";
 import { stats } from "@/constants/stats";
-import Button from "@/components/Button";
+import Button from "@/components/Button/Button";
 import { services } from "@/constants/services";
 import ServiceCard from "./components/ServiceCard";
 import ProjectLogoSlider from "./components/ProjectLogoSlider";
@@ -13,12 +13,12 @@ import { HiArrowLongRight } from "react-icons/hi2";
 const Home = () => {
   return (
     <>
-      <div className="flex md:justify-between mb-[67px] items-center justify-center md:flex-row sm:flex-row flex-col md:gap-[10px]">
-        <div className="xl:ml-[84px] md:ml-[48px] xl:mt-[109px] md:mt-[36px] sm:mt-[36px] mt-[30px]">
-          <h1 className="xl:text-[61px] md:text-[42px] sm:text-[42px] text-[31px] font-bold xl:w-[628px] w-[305px] text-[#474747] xl:mb-[12px] mb-[18px] font-Satoshi-Bold">
+      <div className="flex md:justify-between mt-[45px] mb-[30px] items-center justify-center md:flex-row sm:flex-row flex-col md:gap-[10px]">
+        <div className="xl:ml-[84px] md:ml-[48px] md:mt-[36px] sm:mt-[36px] mt-[30px]">
+          <h1 className="md:text-[42px] sm:text-[42px] text-[31px] font-bold xl:w-[628px] w-[305px] text-[#474747] xl:mb-[12px] mb-[18px] font-Satoshi-Bold">
             Transforming Concepts into Code
           </h1>
-          <p className="text-[#8D8D8D] xl:text-[20px] text-[14px] xl:mb-[12px] mb-[18px]">
+          <p className="text-[#8D8D8D] xl:text-[18px] text-[14px] xl:mb-[12px] mb-[18px]">
             Enterprises . Start Ups. Growing Companies
           </p>
           <p className="xl:text-[16px] md:text-[13px] sm:text-[13px] text-[14px] text-[#8D8D8D] xl:w-[628px] w-[343px] xl:mb-[52px] mb-[25px]">
@@ -27,31 +27,32 @@ const Home = () => {
           </p>
           <Button
             text="Learn More"
-            className="xl:w-[184px] xl:h-[61px] w-[123px] h-[41px] md:w-[113px] md:h-[37px] sm:w-[113px] sm:h-[37px] text-[14px] xl:text-[20px] border border-[#0B4D8E] text-[#0B4D8E] rounded-[10px]"
+            textClass="xl:text-[16px] text-[14px]"
+            className="xl:w-[184px] xl:h-[61px] w-[123px] h-[41px] md:w-[113px] md:h-[37px] sm:w-[113px] sm:h-[37px] border border-[#0B4D8E] text-[#0B4D8E] rounded-[10px]"
           />
         </div>
-        <div className="xl:mt-[88px] mt-[59px] xl:mr-[74.53px] md:mr-[18px]">
+        <div className="xl:mr-[74.53px] md:mr-[18px]">
           <div className="relative">
             <Image
               src={"/images/hero2.png"}
               alt={"hero2"}
               width={130}
               height={130}
-              className="absolute xl:top-[-45px] top-[-30px] xl:w-[130px] w-[82.44px] xl:h-[130px] h-[82.44px] md:w-[77.69px] md:h-[77.69px] sm:w-[77.69px] sm:h-[77.69px]"
+              className="absolute xl:top-[-30px] top-[-30px] xl:w-[100px] w-[82.44px] xl:h-[100px] h-[82.44px] md:w-[77.69px] md:h-[77.69px] sm:w-[77.69px] sm:h-[77.69px]"
             />
             <Image
               src={"/images/hero1.png"}
               width={492}
               height={529}
               alt={"hero1"}
-              className="xl:w-[492px] xl:h-[529px] md:h-[294.27px] sm:h-[294.27px] md:w-[294.27px] sm:w-[294.27px] w-[312px] h-[312px]"
+              className="xl:w-[380px] xl:h-[410px] md:h-[294.27px] sm:h-[294.27px] md:w-[294.27px] sm:w-[294.27px] w-[312px] h-[312px]"
             />
             <Image
               src={"/images/hero3.png"}
               alt={"hero3"}
               width={130}
               height={130}
-              className="absolute xl:bottom-[-30px] bottom-[-15px] xl:w-[130px] w-[82.44px] xl:h-[130px] h-[82.44px] md:w-[77.69px] md:h-[77.69px] sm:w-[77.69px] sm:h-[77.69px]"
+              className="absolute xl:bottom-[-10px] bottom-[-15px] xl:w-[100px] w-[82.44px] xl:h-[100px] h-[82.44px] md:w-[77.69px] md:h-[77.69px] sm:w-[77.69px] sm:h-[77.69px]"
             />
           </div>
         </div>
