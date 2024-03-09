@@ -1,82 +1,53 @@
-"use client";
-import React, { Component } from "react";
-import { testimonials } from "@/constants/testimonialData";
-import Slider from "react-slick";
-import TestimonialCard from "../TestimonialCard/TestimonialCard";
+'use client'
+import React, { useEffect, useRef } from 'react';
+import { EmblaCarouselType } from 'embla-carousel';
+import useEmblaCarousel from 'embla-carousel-react';
+import { testimonials } from '@/constants/testimonialData';
+import TestimonialCard from '../TestimonialCard/TestimonialCard';
 
-class TestimonialSlider extends Component {
-  componentDidMount() {
-    // You can customize the initialization here if needed
-    // For example, you can log something to check if this block is executed
-    console.log("Slider initialized");
-  }
-  render() {
-    const settings = {
-      dots: false,
-      arrows: false,
-      infinite: false,
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      initialSlide: 0,
-      variableWidth: true,
-      responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2,
-          },
-        },
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2,
-          },
-        },
-        {
-          breakpoint: 820,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2,
-          },
-        },
-        {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2,
-            initialSlide: 2,
-          },
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1,
-          },
-        },
-        {
-          breakpoint: 375,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-          },
-        },
-      ],
-    };
-    return (
-      <Slider {...settings}>
-        {testimonials?.map((data) => {
-          return (
-            <div key={data.id} className="pb-[10px]">
-              <TestimonialCard testimonialData={data} />
-            </div>
-          );
-        })}
-      </Slider>
-    );
-  }
+interface SlideType {
+  position: number;
+  width: number;
 }
+
+const TestimonialSlider = () => {
+  // Initialize Embla Carousel
+  const [emblaRef, emblaApi] = useEmblaCarousel({ slidesToScroll: 1, loop: false });
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  // useEffect to handle Embla Carousel initialization
+  useEffect(() => {
+    // Check if emblaApi is available before proceeding
+    if (emblaApi && containerRef.current) {
+      emblaApi.on('init', () => {
+        // Set the width of each slide to one-third of the container's width
+        const slides = (emblaApi as EmblaCarouselType & { slides: HTMLElement[] }).slides;
+
+        const getScrollSnapList = (): number[] =>
+          slides.map(() => {
+            const containerWidth = containerRef.current?.getBoundingClientRect().width || 0;
+            return containerWidth / 3;
+          });
+
+        emblaApi.scrollSnapList = getScrollSnapList;
+      });
+    }
+  }, [emblaApi]);
+
+  return (
+    <div className="overflow-hidden">
+      <div className="embla" ref={emblaRef}>
+        <div className="flex py-2 px-1 gap-[20px]" ref={containerRef}>
+          {/* Check if testimonials array is available before mapping */}
+          {testimonials?.map((slide) => (
+            <div key={slide?.id} className="embla__slide flex-none flex-grow-0 flex-shrink-0 w-auto">
+              <TestimonialCard testimonialData={slide} />
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
 
 export default TestimonialSlider;

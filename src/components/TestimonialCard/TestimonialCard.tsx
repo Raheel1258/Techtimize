@@ -1,18 +1,14 @@
 import Image from "next/image";
 import React from "react";
+import { RatingsIcon } from "../../../public/assets";
 
 const TestimonialCard = ({ testimonialData }: any) => {
   return (
-    <div className="w-[288px] h-[463px] md:w-[302px] md:h-[490px] lg:w-[467px] lg:h-[539px] rounded-[15px] shadow-lg">
-      <div className="w-[64px] h-[64px] lg:w-[82px] lg:h-[82px] bg-[#0697D5] rounded-br-[15px]">
-        <Image
-          src={"/images/double-quotes.svg"}
-          alt={"double-quotes"}
-          width={86}
-          height={86}
-        />
+    <div className="w-[288px] h-[390px] md:w-[302px] md:h-[490px] lg:w-[467px] lg:h-[500px] rounded-[15px] shadow-lg">
+      <div className="w-[64px] h-[64px] lg:w-[82px] lg:h-[82px] flex items-center justify-center bg-[#0697D5] rounded-br-[15px]">
+        <Image src={"/assets/svgs/double-quotes.svg"} alt={"quotes icon"} width={80} height={80} />
       </div>
-      <p className="w-[240px] lg:w-[365px] lg:text-[16px] ml-[24px] lg:ml-[71px] mt-[18px] lg:mt-[25px] text-[14px] text-[#727272]">
+      <p className="w-[240px] lg:w-[365px] ml-[24px] lg:ml-[71px] mt-[18px] lg:mt-[25px] text text-[#727272]">
         {testimonialData?.review}
       </p>
       <div className="flex ml-[24px] lg:ml-[71px] lg:mt-[49px] mt-[32px] gap-[10px]">
@@ -30,13 +26,7 @@ const TestimonialCard = ({ testimonialData }: any) => {
           <p className="text-[12px] lg:text-[16px] lg:mb-[10px] text-[#727272]">
             {testimonialData?.country}
           </p>
-          <Image
-            src={"/images/ratings.svg"}
-            alt={"ratings"}
-            width={81}
-            height={18}
-            className="lg:w-[100px] lg:h-[20.9px]"
-          />
+          <RatingsIcon />
         </div>
       </div>
     </div>

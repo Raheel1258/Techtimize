@@ -1,5 +1,6 @@
-import Sweden from "../../public/images/SE.svg";
-import US from "../../public/images/US.svg";
+import Sweden from "../../public/assets/svgs/SE.svg";
+import US from "../../public/assets/svgs/US.svg";
+
 
 export const testimonials = [
   {

@@ -1,3 +1,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .container {
+    @apply max-w-[1536px] mx-auto !important;
+  }
+  .text {
+    @apply lg:text-[16px] md:text-[14px] text-[12.5px];
+  }
+  .page-pt {
+    @apply xl:pt-[80px] pt-[80px] sm:pt-[90px] md:pt-[80px] lg:pt-[90px];
+  }
+  .page-px {
+    @apply sm:px-[25px] md:px-[30px] lg:px-[40px] xl:px-[70px] px-[16px];
+  }
+  .page-heading {
+    @apply xl:text-[42px] md:text-[38px] text-[32px] text-[#474747] font-bold text-center;
+  }
+  .page-sub-heading {
+    @apply lg:text-[31px] sm:text-[28px] text-[25px] text-[#323232];
+  }
+  .page-blue-heading {
+    @apply text-[#069AD8] sm:text-[16px] text-[14px] font-medium;
+  }
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("/assets/fonts/Satoshi-Bold.ttf");
+  font-weight: "800";
+  font-style: bold;
+}
+
+body {
+  font-family: "Satoshi", sans-serif;
+}
