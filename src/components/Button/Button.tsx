@@ -11,7 +11,7 @@ interface ButtonProps {
 const Button: FC<ButtonProps> = ({ text, className, icon, onClick,textClass }) => {
   return (
     <button className={`${className}`} onClick={onClick}>
-      <p className={textClass}>{text}</p>
+      <p className={`${textClass} satoshi-medium`}>{text}</p>
       {icon && <div>{icon}</div>}
     </button>
   );

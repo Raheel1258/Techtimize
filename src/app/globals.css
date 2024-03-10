@@ -22,17 +22,51 @@
     @apply lg:text-[31px] sm:text-[28px] text-[25px] text-[#323232];
   }
   .page-blue-heading {
-    @apply text-[#069AD8] sm:text-[16px] text-[14px] font-medium;
+    @apply text-[#069AD8] sm:text-[16px] text-[14px] satoshi-medium;
   }
 }
 
 @font-face {
-  font-family: "Satoshi";
+  font-family: "Satoshi-Variable";
+  src: url("/assets/fonts/Satoshi-Variable.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Satoshi-Bold";
   src: url("/assets/fonts/Satoshi-Bold.ttf");
-  font-weight: "800";
-  font-style: bold;
+  font-weight: 700; 
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Satoshi-Medium";
+  src: url("/assets/fonts/Satoshi-Medium.ttf");
+  font-weight: 500; 
+  font-style: normal;
 }
 
 body {
-  font-family: "Satoshi", sans-serif;
+  font-family: "Satoshi-Variable", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Satoshi-Bold", sans-serif;
+  font-weight: 700;
+}
+
+.satoshi-medium {
+  font-family: "Satoshi-Medium", sans-serif;
+  font-weight: 500;
+}
+
+.satoshi-variable-bold {
+  font-family: "Satoshi-Bold", sans-serif;
+  font-weight: 700;
+}
+
+.satoshi-bold {
+  font-family: "Satoshi-Bold", sans-serif;
+  font-weight: 700;
 }

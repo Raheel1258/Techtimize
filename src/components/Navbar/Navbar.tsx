@@ -19,7 +19,7 @@ const Navbar: React.FC = () => {
 
   return (
     <header className="container fixed bg-white z-10 top-0 left-0 right-0">
-      <div className="flex items-center justify-between lg:px-[69px] md:px-[45px] px-[18px] shadow-md xl:h-[80px] lg:h-[90px] h-[79px]">
+      <div className="flex items-center justify-between lg:px-[69px] md:px-[45px] px-[15px] shadow-md xl:h-[80px] lg:h-[90px] h-[79px]">
         <Link href={"/"}>
           <Image
             src="/assets/svgs/companyLogo.svg"
@@ -37,7 +37,7 @@ const Navbar: React.FC = () => {
                   key={item?.id}
                   className={`cursor-pointer flex flex-col items-center gap-[10px] ${
                     item?.path === pathname
-                      ? "text-[#0697D5]"
+                      ? "text-[#0697D5] satoshi-bold"
                       : "text-[#4F4F4F]"
                   }`}
                 >
