@@ -11,3 +11,4 @@ export { default as DoubleQuotesIcon } from "./svgs/double-quotes.svg";
 export { default as ProjectManageIcon } from "./svgs/projectManage.svg";
 export { default as RatingsIcon } from "./svgs/ratings.svg";
 export { default as StaffIcon } from "./svgs/staff.svg";
+export { default as SuitcaseIcon } from "./svgs/suitcaseIcon.svg";
