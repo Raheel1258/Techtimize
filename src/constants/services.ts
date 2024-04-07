@@ -49,3 +49,111 @@ export const services = [
       "lg:w-[44px] lg:h-[44px] md:w-[25.86px] md:h-[29.57px] sm:w-[25.86px] sm:h-[29.57px] w-[30px] h-[33px]",
   },
 ];
+
+export const serviceOptions = [
+  {
+    id: 0,
+    text: "App Development",
+  },
+  {
+    id: 1,
+    text: "UI UX",
+  },
+  {
+    id: 2,
+    text: "Artificial Intelligence",
+  },
+  {
+    id: 3,
+    text: "Staff Augmentation",
+  },
+  {
+    id: 4,
+    text: "Cloud Services",
+  },
+  {
+    id: 5,
+    text: "Management",
+  },
+];
+
+export const serviceCardInfo = [
+  {
+    id: 0,
+    serviceName: "App Development",
+    services: [
+      {
+        id: 0,
+        title: "Web App Development",
+        description:
+          "We specialize in crafting bespoke web applications, e-commerce platforms, and mobile apps that drive your online success. Elevate your online presence with user-centric design, scalability, and robust functionality tailored to your unique needs.",
+      },
+      {
+        id: 1,
+        title: "Mobile App Development",
+        description:
+          "We excel in creating dynamic, user-centric apps that cater to your unique needs. Our specialty lies in crafting intuitive, scalable solutions that bring your vision to life and ensure a seamless, engaging experience for your audience.",
+      },
+    ],
+  },
+  {
+    id: 1,
+    serviceName: "UI UX",
+    services: [
+      {
+        id: 0,
+        title: "UI UX Design",
+        description:
+          "We specialize in crafting intuitive, visually appealing interfaces that captivate and engage. From responsive web design to mobile app interfaces, we ensure your users have an unforgettable journey.",
+      },
+    ],
+  },
+  {
+    id: 2,
+    serviceName: "Artificial Intelligence",
+    services: [
+      {
+        id: 0,
+        title: "Artificial Intelligence",
+        description:
+          "We harness the power of artificial intelligence to drive business growth and innovation. Our tailored solutions, including machine learning, natural language processing, and computer vision, empower you to make data-driven decisions and automate processes, unlocking new opportunities for success.",
+      },
+    ],
+  },
+  {
+    id: 3,
+    serviceName: "Staff Augmentation",
+    services: [
+      {
+        id: 0,
+        title: "Staff Augmentation",
+        description:
+          "Our goal is to seamlessly integrate skilled professionals into your projects, enhancing your team's capabilities. Whether you need additional technical expertise, increased productivity, or specialized skills, our staff augmentation solutions ensure a harmonious and effective collaboration.",
+      },
+    ],
+  },
+  {
+    id: 4,
+    serviceName: "Cloud Services",
+    services: [
+      {
+        id: 0,
+        title: "Cloud Services",
+        description:
+          "Techtimize provides a comprehensive range of cloud services, offering expert solutions across AWS, Azure, and Google Cloud Platform. With a focus on seamless integration, security, and scalability, we empower your business to harness the full potential of cloud computing for your digital transformation needs. Trust us to empower your digital transformation journey with top-tier cloud services tailored to your unique needs.",
+      },
+    ],
+  },
+  {
+    id: 5,
+    serviceName: "Management",
+    services: [
+      {
+        id: 0,
+        title: "Project Management",
+        description:
+          "We specialize in optimizing workflows, enhancing efficiency, and delivering results. Whether it's task coordination, resource allocation, or timeline management, we'll ensure your projects run seamlessly, helping you meet your goals on time and within budget.",
+      },
+    ],
+  },
+];

@@ -4,6 +4,7 @@ import Tag from "@/components/Tag/Tag";
 import { BsClock } from "react-icons/bs";
 import { ImLocation } from "react-icons/im";
 import Button from "@/components/Button/Button";
+import Link from "next/link";
 
 const JobOpeningCard = () => {
   return (
@@ -14,7 +15,9 @@ const JobOpeningCard = () => {
         </div>
         <div className="w-full flex flex-col justify-between">
           <div className="flex justify-between w-full">
-            <h5 className="font-semibold xl:text-[25px] md:text-[20px]">Full Stack Developer</h5>
+            <h5 className="font-semibold xl:text-[25px] md:text-[20px]">
+              Full Stack Developer
+            </h5>
             <Tag
               text="Software Engineer"
               textClass="font-semibold text-[10px]"
@@ -29,7 +32,11 @@ const JobOpeningCard = () => {
                 className="bg-white border"
                 icon={<BsClock size="20px" color="#069AD8" />}
               />
-              <Tag text="On-Site" textClass="text-[10px]" className="bg-[#F7F7F7]" />
+              <Tag
+                text="On-Site"
+                textClass="text-[10px]"
+                className="bg-[#F7F7F7]"
+              />
               <Tag
                 text="Lahore"
                 textClass="text-[#069AD8] text-[10px]"
@@ -37,11 +44,13 @@ const JobOpeningCard = () => {
                 icon={<ImLocation size="20px" color="#069AD8" />}
               />
             </div>
-            <Button
-              text="View Details"
-              textClass="text"
-              className="bg-[#069AD8] text-white xl:p-[10px] p-[5px] rounded-[7px]"
-            />
+            <Link href={"/job-description"}>
+              <Button
+                text="View Details"
+                textClass="text"
+                className="bg-[#069AD8] text-white xl:p-[10px] p-[5px] rounded-[7px]"
+              />
+            </Link>
           </div>
         </div>
       </div>

@@ -24,6 +24,15 @@
   .page-blue-heading {
     @apply text-[#069AD8] sm:text-[16px] text-[14px] satoshi-medium;
   }
+  .bg-primaryBlue {
+    @apply bg-[#0697D5];
+  }
+  .bg-secondaryBlue {
+    @apply bg-[#0B4D8E];
+  }
+  .text-primaryBlue {
+    @apply text-[#0697D5];
+  }
 }
 
 @font-face {
@@ -36,14 +45,14 @@
 @font-face {
   font-family: "Satoshi-Bold";
   src: url("/assets/fonts/Satoshi-Bold.ttf");
-  font-weight: 700; 
+  font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Satoshi-Medium";
   src: url("/assets/fonts/Satoshi-Medium.ttf");
-  font-weight: 500; 
+  font-weight: 500;
   font-style: normal;
 }
 
@@ -51,7 +60,12 @@ body {
   font-family: "Satoshi-Variable", sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Satoshi-Bold", sans-serif;
   font-weight: 700;
 }
@@ -69,4 +83,13 @@ h1, h2, h3, h4, h5, h6 {
 .satoshi-bold {
   font-family: "Satoshi-Bold", sans-serif;
   font-weight: 700;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }

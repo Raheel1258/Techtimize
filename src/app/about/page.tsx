@@ -107,7 +107,7 @@ const About = () => {
             <Button
               text="Contact Us"
               textClass="text"
-              className="bg-[#0697D5] rounded-[7px] text-white mt-[30px] px-[20px] py-[10px]"
+              className="bg-primaryBlue rounded-[7px] text-white mt-[30px] px-[20px] py-[10px]"
             />
           </div>
         </div>
