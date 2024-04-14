@@ -10,6 +10,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import Image from "next/image";
 import SocialIcon from "./components/SocialIcon";
+import { requirements } from "@/constants/select-options";
 
 const ContactUs = () => {
   return (
@@ -41,7 +42,7 @@ const ContactUs = () => {
                 placeHolderText="+92 344 78057 45"
                 min={0}
               />
-              <SelectInput labelText="Select Requirement" />
+              <SelectInput labelText="Select Requirement" options={requirements} />
             </div>
             <TextArea labelText="Your Message" placeHolderText="Hi...." />
             <Button

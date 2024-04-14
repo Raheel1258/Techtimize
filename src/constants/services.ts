@@ -87,12 +87,14 @@ export const serviceCardInfo = [
         title: "Web App Development",
         description:
           "We specialize in crafting bespoke web applications, e-commerce platforms, and mobile apps that drive your online success. Elevate your online presence with user-centric design, scalability, and robust functionality tailored to your unique needs.",
+        image: "/assets/svgs/webDev.svg",
       },
       {
         id: 1,
         title: "Mobile App Development",
         description:
           "We excel in creating dynamic, user-centric apps that cater to your unique needs. Our specialty lies in crafting intuitive, scalable solutions that bring your vision to life and ensure a seamless, engaging experience for your audience.",
+        image: "/assets/svgs/mobDev.svg",
       },
     ],
   },
@@ -105,6 +107,7 @@ export const serviceCardInfo = [
         title: "UI UX Design",
         description:
           "We specialize in crafting intuitive, visually appealing interfaces that captivate and engage. From responsive web design to mobile app interfaces, we ensure your users have an unforgettable journey.",
+        image: "/assets/svgs/ui.svg",
       },
     ],
   },
@@ -117,6 +120,7 @@ export const serviceCardInfo = [
         title: "Artificial Intelligence",
         description:
           "We harness the power of artificial intelligence to drive business growth and innovation. Our tailored solutions, including machine learning, natural language processing, and computer vision, empower you to make data-driven decisions and automate processes, unlocking new opportunities for success.",
+        image: "/assets/svgs/ai.svg",
       },
     ],
   },
@@ -129,6 +133,7 @@ export const serviceCardInfo = [
         title: "Staff Augmentation",
         description:
           "Our goal is to seamlessly integrate skilled professionals into your projects, enhancing your team's capabilities. Whether you need additional technical expertise, increased productivity, or specialized skills, our staff augmentation solutions ensure a harmonious and effective collaboration.",
+        image: "/assets/svgs/staff.svg",
       },
     ],
   },
@@ -141,6 +146,7 @@ export const serviceCardInfo = [
         title: "Cloud Services",
         description:
           "Techtimize provides a comprehensive range of cloud services, offering expert solutions across AWS, Azure, and Google Cloud Platform. With a focus on seamless integration, security, and scalability, we empower your business to harness the full potential of cloud computing for your digital transformation needs. Trust us to empower your digital transformation journey with top-tier cloud services tailored to your unique needs.",
+        image: "/assets/svgs/cloud.svg",
       },
     ],
   },
@@ -153,6 +159,7 @@ export const serviceCardInfo = [
         title: "Project Management",
         description:
           "We specialize in optimizing workflows, enhancing efficiency, and delivering results. Whether it's task coordination, resource allocation, or timeline management, we'll ensure your projects run seamlessly, helping you meet your goals on time and within budget.",
+        image: "/assets/svgs/projectManage.svg",
       },
     ],
   },

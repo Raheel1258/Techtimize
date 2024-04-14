@@ -7,17 +7,20 @@ interface Service {
   id: string;
   title: string;
   description: string;
+  image: string;
 }
 
 const PopularServices = () => {
   const [selectedService, setSelectedService] = useState<string>("");
 
   useEffect(() => {
-    const defaultService = serviceCardInfo.find(service => service.serviceName === "App Development");
+    const defaultService = serviceCardInfo.find(
+      (service) => service.serviceName === "App Development"
+    );
     setSelectedService(defaultService);
   }, []);
 
-  const handleServiceSelect = (serviceText:string) => {
+  const handleServiceSelect = (serviceText: string) => {
     const selectedServiceInfo = serviceCardInfo.find(
       (service) => service.serviceName === serviceText
     );
@@ -31,7 +34,11 @@ const PopularServices = () => {
           return (
             <li
               key={service?.id}
-              className={`whitespace-nowrap sm:w-auto cursor-pointer satoshi-medium ${selectedService?.serviceName === service.text ? 'text-primaryBlue' : ''}`}
+              className={`whitespace-nowrap sm:w-auto cursor-pointer satoshi-medium ${
+                selectedService?.serviceName === service.text
+                  ? "text-primaryBlue"
+                  : ""
+              }`}
               onClick={() => handleServiceSelect(service.text)}
             >
               {service?.text}
@@ -53,12 +60,16 @@ const PopularServices = () => {
       <div className="flex flex-nowrap gap-[50px] overflow-x-auto scrollbar-hide max-w-full">
         {selectedService && (
           <>
-            {selectedService?.services?.map((service:Service) => (
+            {selectedService?.services?.map((service: Service) => (
               <div
                 key={service.id}
                 className="flex-none flex-shrink-0 w-full xl:w-1/4 sm:w-[35%]"
               >
-                <ServiceCard title={service.title} description={service.description} />
+                <ServiceCard
+                  title={service.title}
+                  description={service.description}
+                  image={service?.image}
+                />
               </div>
             ))}
           </>
