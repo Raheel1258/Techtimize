@@ -1,4 +1,5 @@
 import React, { FC } from "react";
+import { twMerge } from "tailwind-merge";
 
 interface Option {
   id: number;
@@ -9,15 +10,17 @@ interface SelectInputProps {
   labelText: string;
   options: Option[];
   onChange?: any;
+  className?: string;
 }
 
 const SelectInput: FC<SelectInputProps> = ({
   labelText,
   options,
   onChange,
+  className,
 }) => {
   return (
-    <div className="flex flex-col w-full gap-[5px]">
+    <div className={twMerge("flex flex-col w-full gap-[5px]", className)}>
       {labelText && (
         <label htmlFor="" className="md:text-[16px] text-[15px]">
           {labelText}

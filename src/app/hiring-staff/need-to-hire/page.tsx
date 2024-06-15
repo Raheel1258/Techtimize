@@ -8,6 +8,8 @@ import React, { useState } from "react";
 import { IoChevronBackCircleOutline } from "react-icons/io5";
 import { expertiseRequirements } from "@/constants/select-options";
 import HiringForm from "@/components/HiringForm/HiringForm";
+import GoBackButton from "@/components/GoBackButton/GoBackButton";
+import { Contract, VideoCallIcon } from "../../../../public/assets";
 
 const NeedToHire = () => {
   const [goBack, setGoBack] = useState(false);
@@ -20,16 +22,11 @@ const NeedToHire = () => {
     setGoBack(true);
   };
   return (
-    <div className="border xl:h-full xl:py-[10%] flex items-center justify-center md:py-[20%] py-[40%] px-[5%]">
-      <div className="rounded-[10px] border p-[20px] w-full">
-        <IoChevronBackCircleOutline
-          color="#909090"
-          size={40}
-          className="cursor-pointer"
-          onClick={handleGoBack}
-        />
+    <div className="xl:h-full xl:py-[6%] flex items-center justify-center md:py-[10%] py-[15%] px-[5%]">
+      <div className="rounded-[10px] shadow-xl sm:p-[20px] p-[10px] w-full">
+        <GoBackButton state={goBack} onClick={handleGoBack} />
         <div className="flex flex-col xl:flex-row w-full">
-          <div className="border xl:basis-[25%] flex gap-[10px] items-baseline sm:px-[3%] sm:pt-[1.5%] pt-[3%] sm:pb-[2%] pb-[4%]">
+          <div className="xl:basis-[30%] flex gap-[10px] items-baseline sm:px-[3%] sm:pt-[1.5%] pt-[3%] sm:pb-[2%] pb-[4%]">
             <div
               className={`flex-shrink-0 rounded-full lg:w-[23px] lg:h-[23px] w-[14px] h-[14px]
                 bg-[#6BBE00]`}
@@ -42,13 +39,15 @@ const NeedToHire = () => {
                 Select the time frame according to your project
               </p>
               <div className="flex flex-col gap-[15px]">
-                <div>
+                <div className="flex items-center gap-[5px]">
+                  <VideoCallIcon className="basis-[21%] sm:basis-[6%] xl:basis-[21%]" />
                   <p className="text satoshi-medium">
                     Web Conference Detail will be provided after acceptance of
                     Hiring Request
                   </p>
                 </div>
-                <div>
+                <div className="flex items-center gap-[5px]">
+                  <Contract className="basis-[21%] sm:basis-[6%] xl:basis-[21%]" />
                   <p className="text satoshi-medium">
                     A Contract will be signed at start of project to ensure
                     transparency
@@ -57,10 +56,10 @@ const NeedToHire = () => {
               </div>
             </div>
           </div>
-          <div className="border xl:basis-[4%] xl:p-[2%] py-[5%]">
+          <div className="xl:basis-[4%] xl:p-[2%] py-[5%]">
             <div className="border xl:w-[1px] w-full h-full" />
           </div>
-          <div className="border xl:basis-[66%] xl:w-[80%] sm:pt-[1.5%] pt-[3%] pb-[2%] sm:px-[4%]">
+          <div className="xl:basis-[66%] xl:w-[80%] sm:pt-[1.5%] pt-[3%] pb-[2%] sm:px-[4%]">
             {goBack ? (
               <HiringForm isBudget={true} buttonText="Hire Now" />
             ) : (
@@ -102,7 +101,7 @@ const NeedToHire = () => {
                 <Button
                   text="Continue"
                   textClass="text"
-                  className="text-white bg-primaryBlue p-[10px] rounded-[7px]"
+                  className="w-[40%] sm:w-[20%] md:w-auto"
                   onClick={handleNext}
                 />
               </>

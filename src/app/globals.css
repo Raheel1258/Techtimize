@@ -10,7 +10,7 @@
     @apply lg:text-[16px] md:text-[14px] text-[12.5px];
   }
   .page-pt {
-    @apply xl:pt-[80px] pt-[80px] sm:pt-[90px] md:pt-[80px] lg:pt-[90px];
+    @apply xl:pt-[80px] pt-[80px] sm:pt-[80px] md:pt-[80px] lg:pt-[90px];
   }
   .page-px {
     @apply sm:px-[25px] md:px-[30px] lg:px-[40px] xl:px-[70px] px-[16px];

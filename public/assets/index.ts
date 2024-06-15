@@ -13,3 +13,6 @@ export { default as RatingsIcon } from "./svgs/ratings.svg";
 export { default as StaffIcon } from "./svgs/staff.svg";
 export { default as SuitcaseIcon } from "./svgs/suitcaseIcon.svg";
 export { default as LongArrowIcon } from "./svgs/longArrow.svg";
+export { default as VideoCallIcon } from "./svgs/video-call.svg";
+export { default as ClockBlack } from "./svgs/clockBlack.svg";
+export { default as Contract } from "./svgs/contract.svg";
