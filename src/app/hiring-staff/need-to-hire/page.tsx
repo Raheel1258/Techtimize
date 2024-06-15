@@ -7,6 +7,7 @@ import { budget, timeOptions } from "@/constants/select-options";
 import React, { useState } from "react";
 import { IoChevronBackCircleOutline } from "react-icons/io5";
 import { expertiseRequirements } from "@/constants/select-options";
+import HiringForm from "@/components/HiringForm/HiringForm";
 
 const NeedToHire = () => {
   const [goBack, setGoBack] = useState(false);
@@ -61,31 +62,7 @@ const NeedToHire = () => {
           </div>
           <div className="border xl:basis-[66%] xl:w-[80%] sm:pt-[1.5%] pt-[3%] pb-[2%] sm:px-[4%]">
             {goBack ? (
-              <div className="w-full">
-                <div className="sm:w-[50%] flex flex-col gap-[20px] mb-[20px]">
-                  <InputField inputType={"text"} labelText="Full Name*" />
-                  <InputField
-                    inputType={"number"}
-                    labelText="Phone Number*"
-                    min={0}
-                  />
-                  <InputField inputType={"email"} labelText="Email*" />
-                  <SelectInput
-                    labelText={"Select Expertise Requirement*"}
-                    options={expertiseRequirements}
-                  />
-                  <SelectInput labelText={"Budget*"} options={budget} />
-                </div>
-                <TextArea
-                  labelText="Please share details of your project so our team can get an idea of it*"
-                  placeHolderText="Hi...."
-                />
-                <Button
-                  text="Hire Now"
-                  textClass="text"
-                  className="text-white bg-primaryBlue p-[10px] rounded-[7px] mt-[30px]"
-                />
-              </div>
+              <HiringForm isBudget={true} buttonText="Hire Now" />
             ) : (
               <>
                 <p className="text mb-[20px]">

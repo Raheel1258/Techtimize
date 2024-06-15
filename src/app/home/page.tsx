@@ -12,7 +12,7 @@ import { HiArrowLongRight } from "react-icons/hi2";
 
 const Home = () => {
   return (
-    <main className="container page-pt">
+    <div>
       <div className="flex md:justify-between my-[45px] sm:my-0 sm:mb-[45px] md:mt-[45px] sm:justify-between justify-center md:flex-row sm:flex-row flex-col md:gap-[10px] sm:px-[25px] md:px-[30px] lg:px-[40px] px-[16px]">
         <div className="xl:ml-[64px] md:mt-[36px] sm:mt-[36px]">
           <h1 className="md:text-[42px] sm:text-[42px] text-[31px] font-bold xl:max-w-[428px] max-w-[305px] text-[#474747] xl:mb-[12px] mb-[18px] font-Satoshi-Bold">
@@ -25,37 +25,33 @@ const Home = () => {
             We cater to all sorts of businesses. We help you harness the power
             of technology to achieve your goals.
           </p>
-          <Button
-            text="Learn More"
-            textClass="text"
-            className="xl:w-[154px] xl:h-[51px] w-[123px] h-[41px] md:w-[113px] md:h-[37px] sm:w-[113px] sm:h-[37px] border border-[#0B4D8E] text-[#0B4D8E] rounded-[10px]"
-          />
+          <Button text="Learn More" textClass="text" variant="outlined" />
         </div>
         <div className="xl:mr-[74.53px] mt-[50px] md:mt-0">
           <div className="flex items-center justify-center">
-          <div className="relative">
-            <Image
-              src={"/images/hero2.png"}
-              alt={"hero2"}
-              width={130}
-              height={130}
-              className="absolute xl:top-[-30px] top-[-30px] xl:w-[100px] w-[82.44px] lg:w-[105px] lg:h-[105px] xl:h-[100px] h-[82.44px] md:w-[100px] md:h-[100px] sm:w-[85px] sm:h-[85px]"
-            />
-            <Image
-              src={"/images/hero1.png"}
-              width={492}
-              height={529}
-              alt={"hero1"}
-              className="lg:w-[395px] lg:h-[425px] md:h-[390px] sm:h-[320px] md:w-[370px] sm:w-[320px] w-[312px] h-[312px]"
-            />
-            <Image
-              src={"/images/hero3.png"}
-              alt={"hero3"}
-              width={130}
-              height={130}
-              className="absolute xl:bottom-[-10px] bottom-[-15px] xl:w-[100px] lg:w-[105px] lg:h-[105px] w-[82.44px] xl:h-[100px] h-[82.44px] md:w-[100px] md:h-[100px] sm:w-[85px] sm:h-[85px]"
-            />
-          </div>
+            <div className="relative">
+              <Image
+                src={"/images/hero2.png"}
+                alt={"hero2"}
+                width={130}
+                height={130}
+                className="absolute xl:top-[-30px] top-[-30px] xl:w-[100px] w-[82.44px] lg:w-[105px] lg:h-[105px] xl:h-[100px] h-[82.44px] md:w-[100px] md:h-[100px] sm:w-[85px] sm:h-[85px]"
+              />
+              <Image
+                src={"/images/hero1.png"}
+                width={492}
+                height={529}
+                alt={"hero1"}
+                className="lg:w-[395px] lg:h-[425px] md:h-[390px] sm:h-[320px] md:w-[370px] sm:w-[320px] w-[312px] h-[312px]"
+              />
+              <Image
+                src={"/images/hero3.png"}
+                alt={"hero3"}
+                width={130}
+                height={130}
+                className="absolute xl:bottom-[-10px] bottom-[-15px] xl:w-[100px] lg:w-[105px] lg:h-[105px] w-[82.44px] xl:h-[100px] h-[82.44px] md:w-[100px] md:h-[100px] sm:w-[85px] sm:h-[85px]"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -85,7 +81,7 @@ const Home = () => {
             clients' success.
           </p>
           <Button
-          textClass="text"
+            textClass="text"
             text="Book a Quote"
             className="xl:w-[131px] xl:h-[46px] md:w-[131px] md:h-[44px] sm:w-[131px] sm:h-[44px] w-[103px] h-[37px] md:mb-[60.61px] bg-[#0697D5] rounded-[7px] text-white"
           />
@@ -128,7 +124,7 @@ const Home = () => {
           Why Us?
         </h3>
         <div className="grid sm:grid-cols-3 grid-cols-1 gap-[10px]">
-        <div className="mb-[39px] md:mb-0 px-[20px] sm:px-0">
+          <div className="mb-[39px] md:mb-0 px-[20px] sm:px-0">
             <h5 className="lg:text-[20px] text-[19px] mb-[15px] font-semibold">
               Cost Efficiency
             </h5>
@@ -168,7 +164,7 @@ const Home = () => {
               </p>
             </div>
             <Button
-              className="bg-white  lg:h-[60px] md:h-[43px] px-[10px] h-[40px] w-[160px] md:w-[170px] lg:w-[180px] rounded-[7px] text-[14px] lg:mt-0 flex items-center justify-center gap-[10px]"
+              className="bg-white text-black border-0"
               text={"Getting Started"}
               textClass="text"
               icon={<HiArrowLongRight size={30} />}
@@ -187,7 +183,7 @@ const Home = () => {
           <TestimonialSlider />
         </div>
       </div>
-    </main>
+    </div>
   );
 };
 

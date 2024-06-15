@@ -19,9 +19,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${MyCustomFont.variable}`}>
+      <body className={`${MyCustomFont.variable} container mx-auto`}>
         <Navbar />
-        {children}
+        <main className="page-pt">{children}</main>
         <Footer />
       </body>
     </html>

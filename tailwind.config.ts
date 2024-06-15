@@ -17,8 +17,13 @@ const config: Config = {
       fontFamily: {
         sans: ["var(--satoshi-font)"],
       },
+      colors: {
+        primary: "#069AD8",
+        secondary:"#0B4D8E",
+        tertiary:"#4F4F4F"
+      },
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 };
 export default config;

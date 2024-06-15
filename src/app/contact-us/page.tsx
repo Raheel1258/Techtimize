@@ -14,7 +14,7 @@ import { requirements } from "@/constants/select-options";
 
 const ContactUs = () => {
   return (
-    <div className="page-pt">
+    <div>
       <PageHeader subHeading="Contact Us" heading="Get In Touch" />
       <div className="pt-[30px] xl:px-[90px] lg:px-[45px] md:px-[30px] sm:px-[25px] px-[15px] pb-[90px]">
         <p className="page-blue-heading xl:mb-[11px] mb-[5px]">Contact Us</p>

@@ -5,7 +5,7 @@ import JobOpeningCard from "./components/JobOpeningCard";
 
 const Careers = () => {
   return (
-    <div className="page-pt">
+    <div>
       <PageHeader subHeading="Career" heading="Opportunity Corner" />
       <div className="border bg-white xl:px-[50px] pt-[30px] pb-[30px]">
         <p className="page-blue-heading xl:mb-[11px] mb-[5px]">

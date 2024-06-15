@@ -19,7 +19,7 @@ const JobDescription = () => {
   };
 
   return (
-    <div className="page-pt">
+    <div>
       <div className="h-[292px] bg-[#FBFCFF] flex items-center justify-start relative">
         <div className="flex justify-end w-full h-full">
           <Image

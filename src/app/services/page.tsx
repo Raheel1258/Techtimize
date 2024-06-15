@@ -7,7 +7,7 @@ import TechSlider from "./components/TechSlider";
 const Services = () => {
 
   return (
-    <div className="page-pt">
+    <div>
       <PageHeader subHeading="Services" heading="Our Services" />
       <div>
         <div className="flex flex-col justify-center items-center pt-[30px] bg-gradient-to-b from-white to-[#FAFBFE] pb-[50px] px-[20px]">

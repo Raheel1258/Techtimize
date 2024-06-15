@@ -7,7 +7,7 @@ import { HiArrowLongRight } from "react-icons/hi2";
 
 const About = () => {
   return (
-    <div className="page-pt">
+    <div>
       <PageHeader subHeading="About" heading="About Us" />
       <div className="flex flex-col sm:flex-row page-px w-full gap-[40px] gap-lg-0 justify-between items-center py-[50px]">
         <div className="sm:basis-[55%]">
