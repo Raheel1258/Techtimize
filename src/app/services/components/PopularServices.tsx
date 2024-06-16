@@ -11,7 +11,7 @@ interface Service {
 }
 
 const PopularServices = () => {
-  const [selectedService, setSelectedService] = useState<string>("");
+  const [selectedService, setSelectedService] = useState<any>("");
 
   useEffect(() => {
     const defaultService = serviceCardInfo.find(
