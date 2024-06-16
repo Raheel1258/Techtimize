@@ -17,7 +17,7 @@ const About = () => {
           <h4 className="page-sub-heading font-semibold xl:mb-[54px] mb-[19px]">
             We’re a Digital Professional Team
           </h4>
-          <p className="text-[#4F4F4F] text xl:max-w-[576px]">
+          <p className="text-tertiary text xl:max-w-[576px]">
             We are a leading software development company dedicated to creating
             innovative, customized solutions that empower businesses to achieve
             their goals. Our team of skilled developers, designers, and project
@@ -98,7 +98,7 @@ const About = () => {
             <h4 className="page-sub-heading font-semibold xl:mb-[54px] mb-[19px]">
               Empowering Your Digital Vision
             </h4>
-            <p className="text xl:w-[472px]">
+            <p className="text xl:w-[472px] text-black">
               Our software IT company offers top-notch web app, mobile app
               development, and a range of creative services to clients
               worldwide. With a strong team of experienced professionals, we
@@ -129,10 +129,10 @@ const About = () => {
               alt={"rating"}
               className="xl:w-[128px] xl:h-[128px] w-[88px] h-[88px]"
             />
-            <p className="xl:text-[20px] satoshi-bold xl:w-[175px] text-center">
+            <p className="xl:text-[20px] satoshi-bold xl:w-[175px] text-center text-black">
               Rating and Reviews
             </p>
-            <p className="xl:w-[202px] text-center text">
+            <p className="xl:w-[202px] text-center text text-tertiary">
               Boost your online reputation with our review and rating management
               software.
             </p>
@@ -145,10 +145,10 @@ const About = () => {
               alt={"rating"}
               className="xl:w-[128px] xl:h-[128px] w-[88px] h-[88px]"
             />
-            <p className="xl:text-[20px] satoshi-bold xl:w-[175px] text-center">
+            <p className="xl:text-[20px] satoshi-bold xl:w-[175px] text-center text-black">
               Sales and Marketing
             </p>
-            <p className="xl:w-[202px] text-center text">
+            <p className="xl:w-[202px] text-center text text-tertiary">
               Revolutionize your sales and marketing with our software solutions
               today.
             </p>
@@ -161,10 +161,10 @@ const About = () => {
               alt={"rating"}
               className="xl:w-[128px] xl:h-[128px] w-[88px] h-[88px]"
             />
-            <p className="xl:text-[20px] satoshi-bold xl:w-[175px] text-center">
+            <p className="xl:text-[20px] satoshi-bold xl:w-[175px] text-center text-black">
               Customer Experience
             </p>
-            <p className="xl:w-[202px] text-center text">
+            <p className="xl:w-[202px] text-center text text-tertiary">
               In the end, it's all about the customer. Build Trust and harmony
               with us.
             </p>
@@ -181,10 +181,10 @@ const About = () => {
                 className="xl:w-[52.05px] xl:h-[52.05px] w-[30px] h-[30px]"
               />
               <div>
-                <p className="xl:text-[19px] md:text-[14px] text-[12px] satoshi-medium mb-[5px]">
+                <p className="xl:text-[19px] md:text-[14px] text-[12px] satoshi-medium mb-[5px] text-black">
                   Customize your Site
                 </p>
-                <p className="xl:w-[330px] xl:text-[16px] md:text-[12px] text-[10px]">
+                <p className="xl:w-[330px] xl:text-[16px] md:text-[12px] text-tertiary text-[10px]">
                   Create a website that reflects your unique brand and vision
                   with our customizable software solutions.
                 </p>
@@ -199,10 +199,10 @@ const About = () => {
                 className="w-[40px] h-[40px] xl:w-[62.46px] xl:h-[62.46px]"
               />
               <div>
-                <p className="xl:text-[19px] md:text-[14px] text-[12px] satoshi-medium mb-[5px]">
+                <p className="xl:text-[19px] md:text-[14px] text-[12px] satoshi-medium mb-[5px] text-black">
                   Edit your Mobile View
                 </p>
-                <p className="xl:text-[16px] md:text-[12px] text-[10px]">
+                <p className="xl:text-[16px] md:text-[12px] text-[10px] text-tertiary">
                   Our software company provides the flexibility to edit your
                   mobile view, ensuring a seamless user experience across all
                   devices
@@ -218,10 +218,10 @@ const About = () => {
                 className="w-[50px] h-[50px] xl:w-[82.23px] xl:h-[82.23px]"
               />
               <div>
-                <p className="xl:text-[19px] md:text-[14px] text-[12px] satoshi-medium mb-[5px]">
+                <p className="xl:text-[19px] md:text-[14px] text-[12px] satoshi-medium mb-[5px] text-black">
                   Add advanced features
                 </p>
-                <p className="xl:text-[16px] md:text-[12px] text-[10px] xl:w-[330px]">
+                <p className="xl:text-[16px] md:text-[12px] text-[10px] xl:w-[330px] text-tertiary">
                   Elevate your business with our software solutions and
                   customize them with advanced features tailored.
                 </p>
@@ -236,10 +236,10 @@ const About = () => {
                 className="w-[40px] h-[40px] xl:w-[59.33px] xl:h-[59.33px]"
               />
               <div>
-                <p className="xl:text-[19px] md:text-[14px] text-[12px] satoshi-medium mb-[5px]">
+                <p className="xl:text-[19px] md:text-[14px] text-[12px] satoshi-medium mb-[5px] text-black">
                   Optimize for Search Engine
                 </p>
-                <p className="xl:text-[16px] md:text-[12px] text-[10px] xl:w-[330px]">
+                <p className="xl:text-[16px] md:text-[12px] text-[10px] xl:w-[330px] text-tertiary">
                   We help you maximize your online visibility with our
                   software's SEO optimization tools and improve your search
                   engine rankings

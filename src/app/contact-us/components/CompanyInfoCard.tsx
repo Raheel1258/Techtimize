@@ -14,8 +14,8 @@ const CompanyInfoCard: React.FC<CompanyInfoCardProps> = ({ icon, heading, text, 
         {icon}
       </div>
       <div>
-        <p className="font-bold lg:text-[16px] text-[15px] satoshi-bold">{heading}</p>
-        <p className="lg:w-[250px] lg:text-[15px] text-[14px] text-wrap">{text}</p>
+        <p className="font-bold lg:text-[16px] text-[15px] satoshi-bold text-black">{heading}</p>
+        <p className="lg:w-[250px] lg:text-[15px] text-[14px] text-wrap text-black">{text}</p>
       </div>
     </div>
   );

@@ -36,33 +36,35 @@ const NeedToConsult = () => {
   console.log("Selected text: ", selectedText);
 
   return (
-    <div className="xl:h-full xl:py-[6%] flex items-center justify-center md:py-[10%] py-[15%] px-[5%]">
+    <div className="xl:h-full xl:py-[6%] flex items-center justify-center md:py-[10%] py-[15%] px-[5%] bg-white">
       <div className="rounded-[10px] shadow-xl sm:p-[20px] px-[10px] py-[20px] w-full">
         <GoBackButton state={goBack} onClick={handleGoBack} />
         <div className="flex flex-col xl:flex-row w-full">
           <div className="xl:basis-[30%] flex gap-[10px] items-baseline sm:px-[3%] sm:pt-[1.5%] pt-[3%] sm:pb-[2%] pb-[4%]">
             <div
               className={`flex-shrink-0 rounded-full lg:w-[23px] lg:h-[23px] w-[14px] h-[14px]
-              bg-[#9A0000]`}
+              bg-red`}
             />
             <div className="">
-              <p className="lg:text-[26px] satoshi-medium mb-[10px]">
+              <p className="lg:text-[26px] satoshi-medium mb-[10px] text-black">
                 Have a Concept, Need to Consult
               </p>
-              <p className="text mb-[30px]">
+              <p className="text mb-[30px] text-tertiary">
                 Schedule an interview with our experts. Chose your date and time
                 slot for the meet.
               </p>
               <div className="flex flex-col gap-[15px]">
                 <div className="flex items-center gap-[5px]">
                   <VideoCallIcon className="basis-[15%] sm:basis-[6%] xl:basis-[15%]" />
-                  <p className="text satoshi-medium w-full">
+                  <p className="text satoshi-medium w-full text-tertiary">
                     Web Conference Detail will be provided after Confirmation
                   </p>
                 </div>
                 <div className="flex items-center gap-[5px]">
                   <ClockBlack className="basis-[13%] sm:basis-[6%] xl:basis-[13%]" />
-                  <p className="text satoshi-medium">30 min Session</p>
+                  <p className="text satoshi-medium text-tertiary">
+                    30 min Session
+                  </p>
                 </div>
               </div>
             </div>

@@ -16,14 +16,14 @@ const InputField: FC<InputFieldProps> = ({
   return (
     <div className="flex flex-col w-full gap-[5px]">
       {labelText && (
-        <label htmlFor="" className="md:text-[16px] text-[15px]">
+        <label htmlFor="" className="md:text-[16px] text-[15px] text-black">
           {labelText}
         </label>
       )}
       <input
         min={min}
         type={inputType}
-        className="border rounded-[7px] p-[10px] text-black md:text-[16px] text-[14px]"
+        className="border rounded-[7px] p-[10px] bg-white text-black md:text-[16px] text-[14px]"
         placeholder={placeHolderText}
       />
     </div>

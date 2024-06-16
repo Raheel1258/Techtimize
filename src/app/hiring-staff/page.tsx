@@ -3,6 +3,7 @@ import React from "react";
 import ModelSlider from "./components/ModelSlider";
 import ExpertiseCard from "./components/ExpertiseCard";
 import { expertiseData } from "@/constants/expertise-data";
+import Image from "next/image";
 
 const HiringStaff = () => {
   return (
@@ -24,7 +25,7 @@ const HiringStaff = () => {
         <h4 className="page-sub-heading font-semibold xl:mb-[27px] mb-[19px]">
           Select Expertise
         </h4>
-        <div className="py-[20px] grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-[60px]">
+        <div className="py-[20px] grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 xl:gap-[60px] sm:gap-[30px] gap-[60px]">
           {expertiseData?.map((item) => {
             return <ExpertiseCard data={item} />;
           })}

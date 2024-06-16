@@ -36,8 +36,8 @@ const PopularServices = () => {
               key={service?.id}
               className={`whitespace-nowrap sm:w-auto cursor-pointer satoshi-medium ${
                 selectedService?.serviceName === service.text
-                  ? "text-primaryBlue"
-                  : ""
+                  ? "text-primary"
+                  : "text-black"
               }`}
               onClick={() => handleServiceSelect(service.text)}
             >
@@ -49,14 +49,14 @@ const PopularServices = () => {
       <div className="w-full flex justify-center my-[30px]">
         <div className="h-[3px] rounded-full sm:w-[80%] w-[95%] bg-white drop-shadow-lg" />
       </div>
-      <p className="text mb-[30px]">
+      <p className="text mb-[30px] text-black">
         We're your dedicated partner in web and mobile app development,
         specializing in creating bespoke solutions that bring your unique vision
         to life. With a focus on user-centric design, scalability, and robust
         functionality, we're here to empower your online presence and drive your
         success.
       </p>
-      <h5 className="mb-[20px] text-[22px]">What we Offer</h5>
+      <h5 className="mb-[20px] text-[22px] text-black">What we Offer</h5>
       <div className="flex flex-nowrap gap-[50px] overflow-x-auto scrollbar-hide max-w-full">
         {selectedService && (
           <>

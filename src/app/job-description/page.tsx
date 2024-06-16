@@ -57,7 +57,7 @@ const JobDescription = () => {
         <div className="flex items-center gap-[5%]">
           <p
             className={`xl:text-[20px] font-semibold cursor-pointer ${
-              isActiveTab === "overview" ? "text-[#069AD8]" : "text-[#4F4F4F]"
+              isActiveTab === "overview" ? "text-primary" : "text-tertiary"
             }`}
             onClick={handleOverview}
           >
@@ -65,16 +65,14 @@ const JobDescription = () => {
           </p>
           <p
             className={`xl:text-[20px] font-semibold cursor-pointer ${
-              isActiveTab === "application"
-                ? "text-[#069AD8]"
-                : "text-[#4F4F4F]"
+              isActiveTab === "application" ? "text-primary" : "text-tertiary"
             }`}
             onClick={handleApplicationForm}
           >
             Application Form
           </p>
         </div>
-        <hr className="xl:mt-[20px] xl:mb-[30px]" />
+        <hr className="xl:mt-[20px] mt-[20px] mb-[30px]" />
         {isActiveTab === "overview" ? <Overview /> : <ApplicationForm />}
       </div>
     </div>

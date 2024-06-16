@@ -12,16 +12,16 @@ import { HiArrowLongRight } from "react-icons/hi2";
 
 const Home = () => {
   return (
-    <div>
+    <div className="bg-white">
       <div className="flex md:justify-between my-[45px] sm:my-0 sm:mb-[45px] md:mt-[45px] sm:justify-between justify-center md:flex-row sm:flex-row flex-col md:gap-[10px] sm:px-[25px] md:px-[30px] lg:px-[40px] px-[16px]">
         <div className="xl:ml-[64px] md:mt-[36px] sm:mt-[36px]">
-          <h1 className="md:text-[42px] sm:text-[42px] text-[31px] font-bold xl:max-w-[428px] max-w-[305px] text-[#474747] xl:mb-[12px] mb-[18px] font-Satoshi-Bold">
+          <h1 className="md:text-[42px] sm:text-[42px] text-[31px] font-bold xl:max-w-[428px] max-w-[305px] text-greyDark xl:mb-[12px] mb-[18px] font-Satoshi-Bold">
             Transforming Concepts into Code
           </h1>
-          <p className="text-[#8D8D8D] xl:text-[18px] text-[14px] xl:mb-[12px] mb-[18px]">
+          <p className="text-lightGrey xl:text-[18px] text-[14px] xl:mb-[12px] mb-[18px]">
             Enterprises . Start Ups. Growing Companies
           </p>
-          <p className="text text-[#8D8D8D] xl:max-w-[628px] max-w-[300px] xl:mb-[32px] mb-[25px]">
+          <p className="text text-lightGrey xl:max-w-[628px] max-w-[300px] xl:mb-[32px] mb-[25px]">
             We cater to all sorts of businesses. We help you harness the power
             of technology to achieve your goals.
           </p>
@@ -73,7 +73,7 @@ const Home = () => {
           <h3 className="page-sub-heading font-bold xl:mb-[54px] mb-[19px]">
             Our Services
           </h3>
-          <p className="text xl:max-w-[397px] max-w-[342px] xl:mb-[70px] md:mb-[42px] mb-[55px]">
+          <p className="text text-darkGrey xl:max-w-[397px] max-w-[342px] xl:mb-[70px] md:mb-[42px] mb-[55px]">
             With a focus on innovation, creativity, and reliability, we aim to
             help businesses stay ahead in the ever-evolving digital landscape.
             Our mission is to provide top-notch technology solutions that drive
@@ -83,7 +83,7 @@ const Home = () => {
           <Button
             textClass="text"
             text="Book a Quote"
-            className="xl:w-[131px] xl:h-[46px] md:w-[131px] md:h-[44px] sm:w-[131px] sm:h-[44px] w-[103px] h-[37px] md:mb-[60.61px] bg-[#0697D5] rounded-[7px] text-white"
+            className="md:mb-[60.61px]"
           />
         </div>
         <div className="xl:mr-[70px] sm:pr-[20px] md:pr-[25px] lg:pr-[30px] md:mt-[84px] sm:mt-[84px] xl:mt-[98px] mt-[55px]">
@@ -120,33 +120,33 @@ const Home = () => {
         </div>
       </div>
       <div className="mt-[120px] bg-[#FBFCFF] sm:px-[25px] relative flex flex-col md:justify-center md:items-center sm:pb-[70px] md:pb-[150px]">
-        <h3 className="xl:text-[31px] lg:text-[31px] text-[25px] font-bold xl:mb-[54px] lg:mb-[19px] mb-[50px] mt-[30px] sm:text-center  px-[20px]">
+        <h3 className="xl:text-[31px] lg:text-[31px] text-[25px] font-bold xl:mb-[54px] lg:mb-[19px] mb-[50px] mt-[30px] sm:text-center  px-[20px] text-black">
           Why Us?
         </h3>
         <div className="grid sm:grid-cols-3 grid-cols-1 gap-[10px]">
           <div className="mb-[39px] md:mb-0 px-[20px] sm:px-0">
-            <h5 className="lg:text-[20px] text-[19px] mb-[15px] font-semibold">
+            <h5 className="lg:text-[20px] text-[19px] mb-[15px] font-semibold text-black">
               Cost Efficiency
             </h5>
-            <p className="text xl:w-[390px]">
+            <p className="text xl:w-[390px] text-service">
               Budget-friendly IT solutions aimed at cutting expenses and
               enhancing your financial performance.
             </p>
           </div>
           <div className="mb-[39px] md:mb-0 px-[20px] sm:px-0">
-            <h5 className="lg:text-[20px] text-[19px] mb-[15px] font-semibold">
+            <h5 className="lg:text-[20px] text-[19px] mb-[15px] font-semibold text-black">
               Pioneering Technology
             </h5>
-            <p className="text xl:w-[390px]">
+            <p className="text xl:w-[390px] text-service">
               We remain current with the most recent tech developments,
               delivering inventive solutions that make a difference.
             </p>
           </div>
           <div className="mb-[39px] md:mb-0 px-[20px] sm:px-0">
-            <h5 className="lg:text-[20px] text-[19px] mb-[15px] font-semibold">
+            <h5 className="lg:text-[20px] text-[19px] mb-[15px] font-semibold text-black">
               Expandability
             </h5>
-            <p className="text xl:w-[390px]">
+            <p className="text xl:w-[390px] text-service">
               Our solutions are designed to adapt and expand alongside your
               business, guaranteeing optimal performance.
             </p>

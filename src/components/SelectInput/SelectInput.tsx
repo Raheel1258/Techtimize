@@ -22,14 +22,14 @@ const SelectInput: FC<SelectInputProps> = ({
   return (
     <div className={twMerge("flex flex-col w-full gap-[5px]", className)}>
       {labelText && (
-        <label htmlFor="" className="md:text-[16px] text-[15px]">
+        <label htmlFor="" className="md:text-[16px] text-[15px] text-black">
           {labelText}
         </label>
       )}
       <select
         name=""
         id=""
-        className="p-[10px] rounded-[7px] border text-black md:text-[16px] text-[14px]"
+        className="p-[10px] rounded-[7px] border bg-white text-black md:text-[16px] text-[14px]"
         onChange={onChange}
       >
         <option value="">Select an Option</option>

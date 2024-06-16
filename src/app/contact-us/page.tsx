@@ -71,7 +71,7 @@ const ContactUs = () => {
             />
             <div className="border rounded-[7px] xl:w-[393px] lg:w-[350px] md:w-[250px] w-full">
               <div className="border-b p-[10px]">
-                <p className="text-center font-bold lg:text-[16px] text-[15px] satoshi-bold">Follow Us</p>
+                <p className="text-center font-bold lg:text-[16px] text-[15px] satoshi-bold text-black">Follow Us</p>
               </div>
               <div className="flex items-center justify-center p-[20px]">
                 <div className="flex items-center gap-[15px]">

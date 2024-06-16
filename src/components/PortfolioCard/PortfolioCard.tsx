@@ -14,10 +14,10 @@ const PortfolioCard = ({ cardData }: any) => {
         />
       </div>
       <div className="lg:px-[27px] md:px-[26px] px-[20px]">
-        <h5 className="lg:text-[20px] md:text-[20px] text-[19px] font-semibold mt-[20px] lg:mb-[10px] mb-[5px]">
+        <h5 className="lg:text-[20px] md:text-[20px] text-[19px] font-semibold mt-[20px] lg:mb-[10px] mb-[5px] text-black">
           {cardData?.title}
         </h5>
-        <p className="text text-[#727272]">
+        <p className="text text-darkGrey">
           {cardData?.description}
         </p>
         <div className="flex justify-end lg:mt-[25px] mt-[10px]">

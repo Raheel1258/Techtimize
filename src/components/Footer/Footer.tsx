@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
             className="xl:w-[263px] xl:h-[94px] lg:w-[263px] lg:h-[94px] md:w-[182px] md:h-[64px] sm:w-[182px] sm:h-[64px] w-[174px] h-[65px] mt-[67px] xl:mt-[77px] md:mt-[42px]"
             alt={"techtimize-logo"}
           />
-          <p className="text mt-[12px] lg:mt-[41px] mr-[51px] md:mr-0 lg:mr-0 xl:w-[316px] md:w-[191px] sm:w-[191px]">
+          <p className="text mt-[12px] lg:mt-[41px] mr-[51px] md:mr-0 lg:mr-0 xl:w-[316px] md:w-[191px] sm:w-[191px] text-black">
             At Techtimize, we specialize in JS frameworks, .Net, machine
             learning, and AI. We offer a range of services to help businesses of
             all sizes achieve their goals.
@@ -34,7 +34,7 @@ const Footer: React.FC = () => {
             </div>
           </div>
           <div className="mt-[25px] lg:mt-[26px] md:mb-[70.52px]">
-            <p className="text-[#969696] text-[16px] mb-[8px]">
+            <p className="text-grey text-[16px] mb-[8px]">
               We are Available on
             </p>
             <Image
@@ -45,7 +45,7 @@ const Footer: React.FC = () => {
             />
           </div>
         </div>
-        <div className="pl-[19px] sm:pl-0 md:pl-0 lg:pl-0 md:w-[150px] sm:w-[100px] xl:w-[156px]">
+        <div className="pl-[19px] sm:pl-0 md:pl-0 lg:pl-0 md:w-[150px] sm:w-[100px] xl:w-[156px] text-black">
           <h3 className="text-[25px] lg:text-[25px] md:text-[16px] sm:text-[16px] font-bold mt-[67px] xl:mt-[87px] lg:mt-[160px] md:mt-[110px] sm:mt-[130px] mb-[26px]">
             Quick Links
           </h3>
@@ -58,7 +58,7 @@ const Footer: React.FC = () => {
             <li>Contact</li>
           </ul>
         </div>
-        <div className="pl-[19px] md:pl-0 sm:pl-0 lg:pl-0 md:w-[190px] sm:w-[134px]">
+        <div className="pl-[19px] md:pl-0 sm:pl-0 lg:pl-0 md:w-[190px] sm:w-[134px] text-black">
           <h3 className="text-[25px] lg:text-[25px] md:text-[16px] sm:text-[16px] font-bold mt-[67px] xl:mt-[87px] lg:mt-[160px] md:mt-[110px] sm:mt-[130px] mb-[26px]">
             Services
           </h3>
@@ -72,7 +72,7 @@ const Footer: React.FC = () => {
             <li>Staff Augmentation</li>
           </ul>
         </div>
-        <div className="pl-[19px] lg:pl-0 md:pl-0 sm:pl-0 lg:pr-5 xl:w-[340px] lg:w-[173px] sm:w-[173px]">
+        <div className="pl-[19px] lg:pl-0 md:pl-0 sm:pl-0 lg:pr-5 xl:w-[340px] lg:w-[173px] sm:w-[173px] text-black">
           <h3 className="text-[25px] lg:text-[25px] md:text-[16px] sm:text-[16px] font-bold mt-[67px] xl:mt-[87px] lg:mt-[160px] sm:mt-[130px] md:mt-[110px] mb-[26px] lg:w-[156px]">
             Get in Touch
           </h3>

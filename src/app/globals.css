@@ -22,7 +22,7 @@
     @apply lg:text-[31px] sm:text-[28px] text-[25px] text-[#323232];
   }
   .page-blue-heading {
-    @apply text-[#069AD8] sm:text-[16px] text-[14px] satoshi-medium;
+    @apply text-primary sm:text-[16px] text-[14px] satoshi-medium;
   }
   .bg-primaryBlue {
     @apply bg-[#0697D5];

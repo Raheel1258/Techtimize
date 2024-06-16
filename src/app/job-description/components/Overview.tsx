@@ -3,8 +3,8 @@ import React from "react";
 const Overview = () => {
   return (
     <div>
-      <h5 className="xl:text-[20px] mb-[10px]">Description</h5>
-      <p className="text mb-[40px]">
+      <h5 className="xl:text-[20px] mb-[10px] text-black">Description</h5>
+      <p className="text mb-[40px] text-tertiary">
         Techtimize is a dynamic and innovative tech company that specializes in
         JS frameworks, .Net, machine learning, and AI!. We are passionate about
         creating cutting-edge software solutions that drive businesses forward
@@ -20,8 +20,10 @@ const Overview = () => {
         helping us deliver high-quality, scalable, and efficient software
         solutions.
       </p>
-      <h5 className="xl:text-[20px] mb-[10px]">Key Responsibilities</h5>
-      <ol className="text list-decimal px-[1.2%] mb-[40px]">
+      <h5 className="xl:text-[20px] mb-[10px] text-black">
+        Key Responsibilities
+      </h5>
+      <ol className="text list-decimal px-[1.2%] mb-[40px] text-tertiary pl-[5%] sm:pl-[2%]">
         <li>
           Collaborate with cross-functional teams to define and refine project
           requirements.
@@ -44,8 +46,8 @@ const Overview = () => {
           drive innovation and improvement.
         </li>
       </ol>
-      <h5 className="xl:text-[20px] mb-[10px]">Requirements</h5>
-      <ul className="text px-[1.2%] mb-[40px] list-disc">
+      <h5 className="xl:text-[20px] mb-[10px] text-black">Requirements</h5>
+      <ul className="text px-[1.2%] mb-[40px] list-disc text-tertiary pl-[5%] sm:pl-[2%]">
         <li>
           Bachelor's degree in Computer Science, Software Engineering, or a
           related field (or equivalent experience).
@@ -72,14 +74,14 @@ const Overview = () => {
         </li>
         <li>Strong communication and interpersonal skills.</li>
       </ul>
-      <p className="text mb-[20px]">
+      <p className="text mb-[20px] text-tertiary">
         If you are a passionate and skilled Full Stack Developer ready to take
         on exciting challenges, we would love to hear from you. Join our team at
         Techtimize and be part of a culture that values innovation and
         creativity. Apply now to help us shape the future of technology! To
         apply, please send your resume and a cover letter to hr@techtimize.co.
       </p>
-      <p className="text">
+      <p className="text text-tertiary">
         Techtimize is an equal opportunity employer. We encourage individuals of
         all backgrounds to apply.
       </p>

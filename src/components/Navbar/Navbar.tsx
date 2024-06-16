@@ -55,13 +55,13 @@ const Navbar = () => {
                       key={item?.id}
                       className={`cursor-pointer flex flex-col items-center gap-[10px] ${
                         item?.path === pathname
-                          ? "text-[#0697D5] satoshi-bold"
-                          : "text-[#4F4F4F]"
+                          ? "text-primary satoshi-bold"
+                          : "text-tertiary"
                       }`}
                     >
                       <p>{item?.link}</p>
                       <div
-                        className={`bg-[#0697D5] w-[25px] h-[3px] rounded-[21px] ${
+                        className={`bg-primary w-[25px] h-[3px] rounded-[21px] ${
                           pathname === item?.path ? "" : "hidden"
                         }`}
                       />
@@ -91,7 +91,7 @@ const Navbar = () => {
             <div className="p-[10px]" onClick={handleCloseSidebar}>
               <IoClose size={25} color="black" />
             </div>
-            <ul className="w-full">
+            <ul className="w-full text-black">
               {links?.map((item) => {
                 return (
                   <li key={item?.id} className="border-b p-[15px] text-[14px]">
@@ -104,10 +104,10 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="w-full px-[15px] pb-[15px] flex flex-col justify-end">
-            <button className="w-full rounded-[5px] bg-[#9A0000] text-white text-[14px] py-[10px] mb-[10px]">
+            <button className="w-full rounded-[5px] bg-red text-white text-[14px] py-[10px] mb-[10px]">
               Get Consultation
             </button>
-            <button className="w-full rounded-[5px] bg-[#7EC61F] text-white text-[14px] py-[10px]">
+            <button className="w-full rounded-[5px] bg-green text-white text-[14px] py-[10px]">
               Hire Now
             </button>
           </div>
