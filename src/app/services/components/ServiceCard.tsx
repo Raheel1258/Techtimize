@@ -4,8 +4,8 @@ import React from "react";
 
 const ServiceCard = ({ title, description, image }: any) => {
   return (
-    <div className="border rounded-[10px] w-full p-[20px]">
-      <div className="flex flex-col items-center">
+    <div className="border rounded-[10px] w-full p-[20px] h-full flex flex-col items-start">
+      <div className="flex flex-col flex-1 items-center">
         <Image
           src={image}
           alt={"service"}

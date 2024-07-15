@@ -6,7 +6,8 @@ const buttonVariants = cva("rounded-[10px]", {
   variants: {
     variant: {
       default: "bg-primary border border-primary text-white",
-      outlined: "border border-secondary text-secondary bg-white",
+      outlined:
+        "border border-secondary text-secondary bg-white hover:bg-primary hover:text-white hover:border-primary",
       disabled:
         "bg-inActive border border-primary text-white cursor-not-allowed",
     },

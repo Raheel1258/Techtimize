@@ -101,6 +101,11 @@ const Navbar = () => {
                   </li>
                 );
               })}
+              <li className="p-[15px] text-[14px]">
+                <Link href={"/contact-us"} onClick={handleCloseSidebar}>
+                  Get In Touch
+                </Link>
+              </li>
             </ul>
           </div>
           <div className="w-full px-[15px] pb-[15px] flex flex-col justify-end">
