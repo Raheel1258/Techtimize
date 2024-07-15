@@ -1,7 +1,4 @@
 import React from "react";
-import Image from "next/image";
-import StatCard from "./components/StatCard";
-import { stats } from "@/constants/stats";
 import Button from "@/components/Button/Button";
 import { services } from "@/constants/services";
 import ServiceCard from "./components/ServiceCard";
@@ -9,59 +6,15 @@ import ProjectLogoSlider from "./components/ProjectLogoSlider";
 import PortfolioSlider from "@/components/PortfolioSlider/PortfolioSlider";
 import TestimonialSlider from "@/components/TestimonialSlider/TestimonialSlider";
 import { HiArrowLongRight } from "react-icons/hi2";
+import HeroSection from "./components/HeroSection";
+import Stats from "./components/Stats";
+import Link from "next/link";
 
 const Home = () => {
   return (
     <div className="bg-white">
-      <div className="flex md:justify-between my-[45px] sm:my-0 sm:mb-[45px] md:mt-[45px] sm:justify-between justify-center md:flex-row sm:flex-row flex-col md:gap-[10px] sm:px-[25px] md:px-[30px] lg:px-[40px] px-[16px]">
-        <div className="xl:ml-[64px] md:mt-[36px] sm:mt-[36px]">
-          <h1 className="md:text-[42px] sm:text-[42px] text-[31px] font-bold xl:max-w-[428px] max-w-[305px] text-greyDark xl:mb-[12px] mb-[18px] font-Satoshi-Bold">
-            Transforming Concepts into Code
-          </h1>
-          <p className="text-lightGrey xl:text-[18px] text-[14px] xl:mb-[12px] mb-[18px]">
-            Enterprises . Start Ups. Growing Companies
-          </p>
-          <p className="text text-lightGrey xl:max-w-[628px] max-w-[300px] xl:mb-[32px] mb-[25px]">
-            We cater to all sorts of businesses. We help you harness the power
-            of technology to achieve your goals.
-          </p>
-          <Button text="Learn More" textClass="text" variant="outlined" />
-        </div>
-        <div className="xl:mr-[74.53px] mt-[50px] md:mt-0">
-          <div className="flex items-center justify-center">
-            <div className="relative">
-              <Image
-                src={"/images/hero2.png"}
-                alt={"hero2"}
-                width={130}
-                height={130}
-                className="absolute xl:top-[-30px] top-[-30px] xl:w-[100px] w-[82.44px] lg:w-[105px] lg:h-[105px] xl:h-[100px] h-[82.44px] md:w-[100px] md:h-[100px] sm:w-[85px] sm:h-[85px]"
-              />
-              <Image
-                src={"/images/hero1.png"}
-                width={492}
-                height={529}
-                alt={"hero1"}
-                className="lg:w-[395px] lg:h-[425px] md:h-[390px] sm:h-[320px] md:w-[370px] sm:w-[320px] w-[312px] h-[312px]"
-              />
-              <Image
-                src={"/images/hero3.png"}
-                alt={"hero3"}
-                width={130}
-                height={130}
-                className="absolute xl:bottom-[-10px] bottom-[-15px] xl:w-[100px] lg:w-[105px] lg:h-[105px] w-[82.44px] xl:h-[100px] h-[82.44px] md:w-[100px] md:h-[100px] sm:w-[85px] sm:h-[85px]"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="grid md:grid-cols-4 grid-cols-2 xl:gap-[60px] gap-[15px] xl:px-[98px] sm:px-[25px] md:px-[30px] lg:px-[40px] px-[16px]">
-        {stats?.map((item) => {
-          return (
-            <StatCard key={item?.id} title={item?.title} stat={item?.stat} />
-          );
-        })}
-      </div>
+      <HeroSection />
+      <Stats />
       <div className="pt-20 pb-10">
         <ProjectLogoSlider />
       </div>
@@ -112,11 +65,9 @@ const Home = () => {
           <PortfolioSlider />
         </div>
         <div className="flex items-center justify-center mt-[46px]">
-          <Button
-            text="View all Projects"
-            textClass="text"
-            className="lg:w-[200px] lg:h-[60px] w-[160px] h-[52px] md:w-[157px] md:h-[44px] text-[16px] bg-[#0697D5] text-white rounded-[10px]"
-          />
+          <Link href={"/projects"}>
+            <Button text="View all Projects" textClass="text" />
+          </Link>
         </div>
       </div>
       <div className="mt-[120px] bg-[#FBFCFF] sm:px-[25px] relative flex flex-col md:justify-center md:items-center sm:pb-[70px] md:pb-[150px]">
@@ -164,7 +115,7 @@ const Home = () => {
               </p>
             </div>
             <Button
-              className="bg-white text-black border-0"
+              className="bg-white text-black border-0 sm:w-auto w-[53%]"
               text={"Getting Started"}
               textClass="text"
               icon={<HiArrowLongRight size={30} />}

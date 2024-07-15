@@ -51,14 +51,14 @@ const ModelSlider = () => {
           </div>
           <div className="flex flex-col justify-end">
             <Image
-              src={"/assets/svgs/model1.svg"}
+              src={"/assets/svgs/model2.svg"}
               alt={"image"}
               width={277}
               height={228}
               className="basis-[40%] hidden xl:flex pt-[10px]"
             />
             <Image
-              src={"/assets/svgs/model3.svg"}
+              src={"/assets/svgs/model4.svg"}
               alt={"image"}
               width={191}
               height={210}
