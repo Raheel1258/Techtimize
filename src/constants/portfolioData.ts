@@ -40,6 +40,7 @@ export const portfolioData = [
 export const projectsData = [
   {
     id: 0,
+    tag: "Lifestyle",
     image: "/assets/svgs/Salesmind.svg",
     imageDesktop: "/assets/images/projectSales.png",
     imageMobile: "/assets/images/projectSalesMobile.png",
@@ -73,6 +74,7 @@ export const projectsData = [
   },
   {
     id: 1,
+    tag: "SaaS",
     image: "/assets/svgs/ChexAI.svg",
     imageDesktop: "/assets/images/projectCheck.png",
     imageMobile: "/assets/images/projectCheckMobile.png",
@@ -112,6 +114,7 @@ export const projectsData = [
   },
   {
     id: 2,
+    tag: "Economics",
     image: "/assets/svgs/Bitcointribe.svg",
     imageDesktop: "/assets/images/projectBitcoin.png",
     imageMobile: "/assets/images/projectBitcoinMobile.png",
@@ -151,6 +154,7 @@ export const projectsData = [
   },
   {
     id: 3,
+    tag: "Medical",
     image: "/assets/svgs/Sunndio.svg",
     imageDesktop: "/assets/images/projectSunndio.png",
     imageMobile: "/assets/images/projectSunndioMobile.png",
@@ -190,6 +194,7 @@ export const projectsData = [
   },
   {
     id: 4,
+    tag: "SaaS",
     image: "/assets/svgs/Fresha.svg",
     imageDesktop: "/assets/images/projectFresha.png",
     imageMobile: "/assets/images/projectFreshaMobile.png",
@@ -232,5 +237,20 @@ export const projectsData = [
         image: "/assets/svgs/aws.svg",
       },
     ],
+  },
+];
+
+export const projectTags = [
+  {
+    name: "SaaS",
+  },
+  {
+    name: "Lifestyle",
+  },
+  {
+    name: "Medical",
+  },
+  {
+    name: "Economics",
   },
 ];
