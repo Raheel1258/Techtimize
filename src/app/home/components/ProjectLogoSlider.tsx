@@ -29,7 +29,7 @@ const ProjectLogoSlider = () => {
           <div className="embla__slide flex-none flex-grow-0 flex-shrink-0 xl:w-[25%] md:w-[30%] sm:w-[25%] w-[60%]">
             <div className="flex items-center justify-center lg:w-full lg:h-[104px] md:w-[189px] md:h-[66px] w-[156px] h-[49px]">
               <Image
-                src={"/images/salesMind.png"}
+                src={"/assets/images/salesMind.png"}
                 alt={"sales mind"}
                 width={89}
                 height={89}
@@ -43,7 +43,7 @@ const ProjectLogoSlider = () => {
           <div className="embla__slide flex-none flex-grow-0 flex-shrink-0 xl:w-[25%] md:w-[30%] sm:w-[25%] w-[60%]">
             <div className="flex items-center justify-center lg:w-full lg:h-[104px] md:w-[189px] md:h-[66px] w-[156px] h-[49px]">
               <Image
-                src={"/images/sunndio.png"}
+                src={"/assets/images/sunndio.png"}
                 alt={"sunndio"}
                 width={201}
                 height={90}
@@ -54,7 +54,7 @@ const ProjectLogoSlider = () => {
           <div className="embla__slide flex-none flex-grow-0 flex-shrink-0 xl:w-[25%] md:w-[30%] sm:w-[25%] w-[60%]">
             <div className="flex items-center justify-center lg:w-full lg:h-[104px] md:w-[189px] md:h-[66px] w-[156px] h-[49px]">
               <Image
-                src={"/images/check.png"}
+                src={"/assets/images/check.png"}
                 alt={"check ai"}
                 width={200}
                 height={104}
@@ -65,7 +65,7 @@ const ProjectLogoSlider = () => {
           <div className="embla__slide flex-none flex-grow-0 flex-shrink-0 xl:w-[25%] md:w-[30%] sm:w-[25%] w-[60%]">
             <div className="flex items-center justify-center xl:gap-[21px] lg:gap-[21px] gap-[10px]  lg:h-[104px] md:h-[66px] h-[49px] w-full">
               <Image
-                src={"/images/bitcoin.png"}
+                src={"/assets/images/bitcoin.png"}
                 alt={"bitcoin"}
                 width={63}
                 height={63}
@@ -79,7 +79,7 @@ const ProjectLogoSlider = () => {
           <div className="embla__slide flex-none flex-grow-0 flex-shrink-0 xl:w-[25%] md:w-[30%] sm:w-[25%] w-[60%]">
             <div className="flex items-center justify-center lg:h-[104px] md:h-[66px] w-full h-[49px]">
               <Image
-                src={"/images/senSights.png"}
+                src={"/assets/images/senSights.png"}
                 alt={"sen sights"}
                 width={239}
                 height={59}
@@ -89,7 +89,7 @@ const ProjectLogoSlider = () => {
           <div className="embla__slide flex-none flex-grow-0 flex-shrink-0 xl:w-[25%] md:w-[30%] sm:w-[25%] w-[60%]">
             <div className="flex items-center justify-center lg:h-[104px] md:h-[66px] w-full h-[49px]">
               <Image
-                src={"/images/fresha.png"}
+                src={"/assets/images/fresha.png"}
                 alt={"fresha"}
                 width={96}
                 height={31}

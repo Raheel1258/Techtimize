@@ -41,7 +41,7 @@ const HeroSection = () => {
               className="absolute xl:top-[-30px] top-[-30px]"
             >
               <Image
-                src={"/images/hero2.png"}
+                src={"/assets/images/hero2.png"}
                 alt={"hero2"}
                 width={130}
                 height={130}
@@ -56,7 +56,7 @@ const HeroSection = () => {
               className="relative"
             >
               <Image
-                src={"/images/hero1.png"}
+                src={"/assets/images/hero1.png"}
                 width={492}
                 height={529}
                 alt={"hero1"}
@@ -78,7 +78,7 @@ const HeroSection = () => {
               className="absolute xl:bottom-[-10px] bottom-[-15px]"
             >
               <Image
-                src={"/images/hero3.png"}
+                src={"/assets/images/hero3.png"}
                 alt={"hero3"}
                 width={130}
                 height={130}
