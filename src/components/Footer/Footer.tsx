@@ -4,6 +4,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
 import { EmailIcon2, PhoneIcon2, PinIcon2 } from "../../../public/assets";
+import Link from "next/link";
 
 const Footer: React.FC = () => {
   return (
@@ -50,12 +51,24 @@ const Footer: React.FC = () => {
             Quick Links
           </h3>
           <ul className="text-[14px] lg:text-[15px] gap-[10px] flex flex-col">
-            <li>Home</li>
-            <li>Hiring Staff</li>
-            <li>Services</li>
-            <li>About</li>
-            <li>Projects</li>
-            <li>Contact</li>
+            <li>
+              <Link href={"/"}>Home</Link>
+            </li>
+            <li>
+              <Link href={"/hiring-staff"}>Hiring Staff</Link>
+            </li>
+            <li>
+              <Link href={"/services"}>Services</Link>
+            </li>
+            <li>
+              <Link href={"/about"}>About</Link>
+            </li>
+            <li>
+              <Link href={"/projects"}>Projects</Link>
+            </li>
+            <li>
+              <Link href={"/contact-us"}>Contact</Link>
+            </li>
           </ul>
         </div>
         <div className="pl-[19px] md:pl-0 sm:pl-0 lg:pl-0 md:w-[190px] sm:w-[134px] text-black">
