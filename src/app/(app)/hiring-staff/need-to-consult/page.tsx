@@ -10,7 +10,7 @@ import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
 import "./style.css";
 import GoBackButton from "@/components/GoBackButton/GoBackButton";
-import { ClockBlack, VideoCallIcon } from "../../../../public/assets";
+import { ClockBlack, VideoCallIcon } from "../../../../../public/assets";
 
 type ValuePiece = Date | null;
 

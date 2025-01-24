@@ -4,7 +4,7 @@ import PageHeader from "@/components/PageHeader/PageHeader";
 import SelectInput from "@/components/SelectInput/SelectInput";
 import TextArea from "@/components/TextArea/TextArea";
 import React from "react";
-import { EmailIcon, PhoneIcon, PinIcon } from "../../../public/assets";
+import { EmailIcon, PhoneIcon, PinIcon } from "../../../../public/assets";
 import CompanyInfoCard from "./components/CompanyInfoCard";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";

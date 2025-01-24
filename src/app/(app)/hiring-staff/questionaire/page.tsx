@@ -1,5 +1,5 @@
 import React from "react";
-import { LongArrowIcon } from "../../../../public/assets";
+import { LongArrowIcon } from "../../../../../public/assets";
 import { questionaireData } from "@/constants/questionaire";
 import Link from "next/link";
 import Image from "next/image";

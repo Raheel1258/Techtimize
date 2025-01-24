@@ -1,5 +1,5 @@
 import React from "react";
-import { SuitcaseIcon } from "../../../../public/assets";
+import { SuitcaseIcon } from "../../../../../public/assets";
 import Tag from "@/components/Tag/Tag";
 import { BsClock } from "react-icons/bs";
 import { ImLocation } from "react-icons/im";

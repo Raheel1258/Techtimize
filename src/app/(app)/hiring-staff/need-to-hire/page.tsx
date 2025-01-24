@@ -9,7 +9,7 @@ import { IoChevronBackCircleOutline } from "react-icons/io5";
 import { expertiseRequirements } from "@/constants/select-options";
 import HiringForm from "@/components/HiringForm/HiringForm";
 import GoBackButton from "@/components/GoBackButton/GoBackButton";
-import { Contract, VideoCallIcon } from "../../../../public/assets";
+import { Contract, VideoCallIcon } from "../../../../../public/assets";
 
 const NeedToHire = () => {
   const [goBack, setGoBack] = useState(false);
