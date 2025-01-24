@@ -5,6 +5,14 @@ import Image from "next/image";
 import React from "react";
 import { HiArrowLongRight } from "react-icons/hi2";
 
+import type { Metadata } from 'next';
+import { generateMetadataFromBE } from "@/lib/utils";
+ 
+
+export async function generateMetadata(): Promise<Metadata> {
+  return await generateMetadataFromBE("about");
+}
+
 const About = () => {
   return (
     <div>

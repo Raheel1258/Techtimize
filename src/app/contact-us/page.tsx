@@ -12,6 +12,14 @@ import Image from "next/image";
 import SocialIcon from "./components/SocialIcon";
 import { requirements } from "@/constants/select-options";
 
+import type { Metadata } from 'next';
+import { generateMetadataFromBE } from "@/lib/utils";
+ 
+
+export async function generateMetadata(): Promise<Metadata> {
+  return await generateMetadataFromBE("contact-us");
+}
+
 const ContactUs = () => {
   return (
     <div>

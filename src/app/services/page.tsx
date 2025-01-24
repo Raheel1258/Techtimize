@@ -4,6 +4,14 @@ import React from "react";
 import PopularServices from "./components/PopularServices";
 import TechSlider from "./components/TechSlider";
 
+import type { Metadata } from 'next';
+import { generateMetadataFromBE } from "@/lib/utils";
+ 
+
+export async function generateMetadata(): Promise<Metadata> {
+  return await generateMetadataFromBE("services");
+}
+
 const Services = () => {
 
   return (

@@ -10,6 +10,14 @@ import HeroSection from "./components/HeroSection";
 import Stats from "./components/Stats";
 import Link from "next/link";
 
+import type { Metadata } from 'next';
+import { generateMetadataFromBE } from "@/lib/utils";
+ 
+
+export async function generateMetadata(): Promise<Metadata> {
+  return await generateMetadataFromBE("home");
+}
+
 const Home = () => {
   return (
     <div className="bg-white">

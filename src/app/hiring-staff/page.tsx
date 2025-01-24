@@ -3,7 +3,14 @@ import React from "react";
 import ModelSlider from "./components/ModelSlider";
 import ExpertiseCard from "./components/ExpertiseCard";
 import { expertiseData } from "@/constants/expertise-data";
-import Image from "next/image";
+
+import type { Metadata } from 'next';
+import { generateMetadataFromBE } from "@/lib/utils";
+ 
+
+export async function generateMetadata(): Promise<Metadata> {
+  return await generateMetadataFromBE("hiring-staff");
+}
 
 const HiringStaff = () => {
   return (
