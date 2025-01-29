@@ -9,8 +9,6 @@ const ChatHeader = () => (
         Techtimize GPT
       </span>
     </h2>
-
-    {/* Action Buttons */}
     <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
       <ChatHeaderButton
         text="Schedule your call quickly"

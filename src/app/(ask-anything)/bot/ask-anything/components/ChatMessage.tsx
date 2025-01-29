@@ -1,5 +1,5 @@
 import React from "react";
-import moment from "moment";
+import { formatRelative } from "date-fns";
 
 interface ChatMessageProps {
   message: string;
@@ -27,7 +27,7 @@ const ChatMessage: React.FC<ChatMessageProps> = ({
             </div>
           )}
           <div className="absolute bottom-0 right-2 text-xs text-gray-300">
-            {moment(createdAt).fromNow()}
+            {formatRelative(createdAt, new Date())}
           </div>
         </div>
       </div>
@@ -36,7 +36,7 @@ const ChatMessage: React.FC<ChatMessageProps> = ({
         <div className="relative min-w-[150px] bg-gray-200 text-gray-800 p-3 rounded-lg max-w-xs">
           {message}
           <div className="absolute bottom-0 right-2 text-xs text-gray-400">
-            {moment(createdAt).fromNow()}
+            {formatRelative(createdAt, new Date())}
           </div>
         </div>
       </div>

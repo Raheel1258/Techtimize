@@ -1,13 +1,19 @@
 "use client";
 import React, { useState } from "react";
-import { apiEndpoints } from "@/app/api/endpoints";
 import ChatBody from "./components/ChatBody";
 import ChatInput from "./components/ChatInput";
+import { CHATBOT_ENDPOINT } from "@/app/api/chatbot-endpoints";
+import * as api from "@/app/api";
 
 interface ChatMessageProps {
   message: string;
   user: boolean;
   createdAt: Date;
+}
+
+interface ChatMessageResponse {
+  sessionId: string;
+  answer: string;
 }
 
 const ChatBotHome = () => {
@@ -27,22 +33,17 @@ const ChatBotHome = () => {
       { message: "", user: false, createdAt: new Date() },
     ]);
 
-    const response = await fetch(
-      `/api/middleware?path=${apiEndpoints.chatBot}`,
-      {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ msg: message, sessionId }),
-      }
-    );
+    const response = await api.POST<ChatMessageResponse>(CHATBOT_ENDPOINT, {
+      msg: message,
+      sessionId,
+    });
 
-    if (!response.ok) {
+    if (response.status === "error") {
       setLoading(false);
-      console.error("Failed to send message");
       return;
     }
 
-    const data = await response.json();
+    const data = response.data;
     setSessionId(data.sessionId);
 
     setChats((prevChats) => [

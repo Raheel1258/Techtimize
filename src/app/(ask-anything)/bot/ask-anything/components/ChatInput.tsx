@@ -1,6 +1,5 @@
 import React from "react";
 import { PiPaperPlaneRightFill } from "react-icons/pi";
-// Importing FaPaperPlane icon from react-icons
 
 interface ChatInputProps {
   message: string;
