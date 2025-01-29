@@ -24,14 +24,14 @@ const POST = async <T>(
     method: "POST",
     body: isInstanceOfFormData ? body : JSON.stringify(body),
   });
+  const jsonResult = await result.json();
   if (!result.ok) {
     return {
       status: "error",
-      error: "Failed to complete the request",
+      error: getErrorMessage(jsonResult.error),
     };
   }
-  const jsonResult = await result.json();
-  const data = jsonResult.response;
+  const data = jsonResult.data;
   return {
     status: "success",
     data,
@@ -46,14 +46,14 @@ const DELETE = async <T>(
     method: "DELETE",
     body: body ? JSON.stringify(body) : undefined,
   });
+  const jsonResult = await result.json();
   if (!result.ok) {
     return {
       status: "error",
-      error: "Failed to delete the waypoint",
+      error: getErrorMessage(jsonResult.error),
     };
   }
-  const jsonResult = await result.json();
-  const data = jsonResult.response;
+  const data = jsonResult.data;
   return {
     status: "success",
     data,
@@ -68,14 +68,15 @@ const GET = async <T>(
     cache: options?.next?.revalidate ? undefined : "no-store",
     ...options,
   });
+
+  const jsonResult = await result.json();
   if (!result.ok) {
     return {
       status: "error",
-      error: "Failed to get data",
+      error: getErrorMessage(jsonResult.error),
     };
   }
-  const jsonResult = await result.json();
-  const data = jsonResult.response;
+  const data = jsonResult.data;
   return {
     status: "success",
     data,
@@ -98,7 +99,7 @@ const PUT = async <T>(
       error: getErrorMessage(jsonResult.error),
     };
   }
-  const data = jsonResult.response;
+  const data = jsonResult.data;
   return {
     status: "success",
     data,
@@ -121,7 +122,7 @@ const PATCH = async <T>(
       error: getErrorMessage(jsonResult.error),
     };
   }
-  const data = jsonResult.response;
+  const data = jsonResult.data;
   return {
     status: "success",
     data,
