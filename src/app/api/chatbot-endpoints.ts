@@ -1,3 +1,6 @@
-const CHATBOT_ENDPOINT = `/api/v1/ask`
+const BOT_FLAG = "/bot";
+// prepend all chatbot endpoints with BOT_FLAG
 
-export { CHATBOT_ENDPOINT }
+const CHATBOT_ENDPOINT = `${BOT_FLAG}/api/v1/ask`;
+
+export { CHATBOT_ENDPOINT };

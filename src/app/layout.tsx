@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import Navbar from "@/components/Navbar/Navbar";
-import Footer from "@/components/Footer/Footer";
-import "../globals.css";
+import "./globals.css";
+import { MyCustomFont } from "../../public/assets/fonts/fonts";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,10 +16,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <>
-      <Navbar />
-      <main className="page-pt bg-white">{children}</main>
-      <Footer />
-    </>
+    <html lang="en">
+      <body className={`${MyCustomFont.variable} bg-white`}>
+        <div className="container mx-auto">{children}</div>
+      </body>
+    </html>
   );
 }
