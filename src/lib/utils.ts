@@ -7,7 +7,7 @@ export function cn(...inputs: ClassValue[]) {
 
 
 import type { Metadata } from 'next';
-import { SEO_ENDPOINT } from "@/api/endpoints";
+import { SEO_ENDPOINT } from "@/app/api/endpoints";
 
 const DEFAULT_METADATA: Metadata = {
     title: "Techtimize",

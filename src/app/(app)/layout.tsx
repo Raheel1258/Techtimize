@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import { MyCustomFont } from "../../../public/assets/fonts/fonts";
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
 import "../globals.css";
@@ -18,14 +17,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={`${MyCustomFont.variable} bg-white`}>
-        <div className="container mx-auto">
-          <Navbar />
-          <main className="page-pt bg-white">{children}</main>
-          <Footer />
-        </div>
-      </body>
-    </html>
+    <>
+      <Navbar />
+      <main className="page-pt bg-white">{children}</main>
+      <Footer />
+    </>
   );
 }
