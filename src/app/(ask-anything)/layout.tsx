@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import { MyCustomFont } from "../../../../public/assets/fonts/fonts";
-import "../../globals.css";
+import { MyCustomFont } from "../../../public/assets/fonts/fonts";
+import "../globals.css";
+import Sidebar from "@/components/Sidebar/Sidebar";
+import ChatbotLayout from "@/components/ChatbotLayout/ChatbotLayout";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,7 +20,9 @@ export default function RootLayoutChat({
   return (
     <html lang="en">
       <body className={`${MyCustomFont.variable} container mx-auto bg-white`}>
-        <main className="bg-white h-screen">{children}</main>
+        <main className="bg-white min-h-screen">
+          <ChatbotLayout>{children}</ChatbotLayout>
+        </main>
       </body>
     </html>
   );
