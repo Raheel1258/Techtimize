@@ -9,6 +9,7 @@ interface ChatBodyProps {
 
 const ChatBody = ({ chats, loading }: ChatBodyProps) => {
   const chatContainerRef = useRef<HTMLDivElement>(null);
+  const isHeaderVisible = chats.length === 0
 
   useEffect(() => {
     if (chatContainerRef.current) {
@@ -18,10 +19,10 @@ const ChatBody = ({ chats, loading }: ChatBodyProps) => {
 
   return (
     <div
-      className="flex flex-col space-y-4 flex-grow overflow-y-auto"
+      className={`flex flex-col space-y-4 flex-grow overflow-y-auto ${isHeaderVisible ? 'justify-center': ''}`}
       ref={chatContainerRef}
     >
-      {chats.length === 0 ? (
+      {isHeaderVisible ? (
         <ChatHeader />
       ) : (
         chats.map((chat, index) => (

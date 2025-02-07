@@ -25,7 +25,6 @@
 //   );
 // }
 
-
 import ChatbotLayout from "@/components/ChatbotLayout/ChatbotLayout";
 import { PropsWithChildren } from "react";
 

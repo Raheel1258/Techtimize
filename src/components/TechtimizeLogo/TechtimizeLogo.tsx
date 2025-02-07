@@ -41,4 +41,4 @@ const TechtimizeLogo = ({
   );
 };
 
-export { TechtimizeLogo };
+export default TechtimizeLogo;

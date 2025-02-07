@@ -8,8 +8,14 @@ interface ChatHeaderButtonProps {
 
 const ChatHeaderButton: React.FC<ChatHeaderButtonProps> = ({ text, icon }) => {
   return (
-    <button className="bg-primary p-2 flex items-center flex-col w-[150px] h-20 text-white rounded-lg shadow">
-      <Image src={icon} width={24} height={24} alt="Calender" />
+    <button className="bg-primary-dark/[0.04] py-4 px-4 flex items-center flex-col w-[180px] text-black rounded-lg shadow">
+      <Image
+        src={icon}
+        width={24}
+        height={24}
+        alt="Calender"
+        className="mb-1.5"
+      />
       <p className="text-center text-[15px]"> {text}</p>
     </button>
   );

@@ -1,1 +1,1 @@
-export * from "./TechtimizeLogo";
+export * from './TechtimizeLogo'
