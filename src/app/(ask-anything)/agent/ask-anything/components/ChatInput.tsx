@@ -22,7 +22,7 @@ const ChatInput: React.FC<ChatInputProps> = ({
         placeholder="Type your message..."
         value={message}
         onChange={(e) => setMessage(e.target.value)}
-        onKeyDown={(e) => e.key === "Enter" && handleSendMessage()} // Send on Enter key
+        onKeyDown={(e) => e.key === "Enter" && handleSendMessage()}
         disabled={loading}
       />
       <button
