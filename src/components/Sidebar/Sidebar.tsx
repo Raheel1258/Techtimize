@@ -48,7 +48,11 @@ const Sidebar: React.FC<SidebarProps> = ({ openSidebar, setOpenSidebar }) => {
               height={24}
               className="group-hover:brightness-0 group-hover:invert"
             />
-            <Link href={item.path} className="font-bold px-4 py-2">
+            <Link
+              href={item.path}
+              className="font-bold px-4 py-2"
+              target="_blank"
+            >
               {item.title}
             </Link>
           </li>
