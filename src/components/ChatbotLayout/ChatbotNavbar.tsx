@@ -1,6 +1,4 @@
 import React from "react";
-import Image from "next/image";
-import { FaHamburger } from "react-icons/fa";
 import { RxHamburgerMenu } from "react-icons/rx";
 
 interface ChatbotNavbarProps {
