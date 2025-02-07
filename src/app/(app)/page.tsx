@@ -12,7 +12,7 @@ import React, { useEffect, useState } from "react";
 import { socket } from "@/socket";
 import { SocketProvider } from "../(ask-anything)/agent/provider/socket-provider";
 import ChatBody from "../(ask-anything)/agent/ask-anything/components/ChatBody";
-import ChatInput from "../(ask-anything)/agent/ask-anything/components/ChatInput";
+import ChatInput from "../(ask-anything)/agent/ask-anything/components/ChatInput"
 
 interface ChatMessageProps {
   message: string;
