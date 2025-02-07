@@ -1,11 +1,10 @@
-import React, { forwardRef, LegacyRef, useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import ChatHeader from "./ChatHeader";
 import ChatMessage from "./ChatMessage";
 
 interface ChatBodyProps {
   chats: { message: string; user: boolean; createdAt: Date }[];
   loading: boolean;
-  ref: LegacyRef<HTMLDivElement>;
 }
 
 const ChatBody = ({ chats, loading }: ChatBodyProps) => {
@@ -49,6 +48,4 @@ const ChatBody = ({ chats, loading }: ChatBodyProps) => {
   );
 };
 
-const HigherOrderChatBody = forwardRef(ChatBody);
-
-export default HigherOrderChatBody;
+export default ChatBody;

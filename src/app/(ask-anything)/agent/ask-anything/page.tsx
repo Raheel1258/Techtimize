@@ -28,7 +28,6 @@ const ChatBotHome = () => {
         { message: res.message, createdAt: new Date(), user: false },
       ]);
       setLoading(false);
-      console.log(res);
     };
   }, []);
 

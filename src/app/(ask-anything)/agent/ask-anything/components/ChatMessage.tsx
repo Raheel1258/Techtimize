@@ -1,4 +1,4 @@
-import React, { forwardRef, LegacyRef } from "react";
+import React from "react";
 import { formatRelative } from "date-fns";
 
 interface ChatMessageProps {
@@ -31,6 +31,4 @@ const ChatMessage = ({ message, user, createdAt }: ChatMessageProps) => (
   </div>
 );
 
-const HigherOrderChatMessage = forwardRef(ChatMessage);
-
-export default HigherOrderChatMessage;
+export default ChatMessage;
