@@ -40,7 +40,7 @@ const ChatBotHome = () => {
   };
 
   return (
-    <div className="flex flex-col items-center h-[calc(100vh_-_100px)] w-full pt-6 bg-gradient-to-br from-blue-1/10 via-white via-30% to-transparent">
+    <div className="flex flex-col items-center h-[calc(100dvh_-_100px)] w-full pt-6 bg-gradient-to-br from-blue-1/10 via-white via-30% to-transparent">
       <div className="w-full rounded-2xl flex flex-col h-full">
         <SocketProvider value={socket}>
           <ChatBody chats={chats} loading={loading} />
