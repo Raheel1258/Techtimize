@@ -19,7 +19,7 @@ const ChatBody = ({ chats, loading }: ChatBodyProps) => {
 
   return (
     <div
-      className={`flex flex-col space-y-4 flex-grow overflow-y-auto ${isHeaderVisible ? 'justify-center': ''}`}
+      className={`flex flex-col space-y-4 h-1 flex-grow overflow-y-auto ${isHeaderVisible ? 'justify-center': ''}`}
       ref={chatContainerRef}
     >
       {isHeaderVisible ? (
