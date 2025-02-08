@@ -7,7 +7,7 @@ const ChatbotLayout = ({ children }: { children: React.ReactNode }) => {
   const [openSidebar, setOpenSidebar] = useState(false);
 
   return (
-    <div className="h-screen flex lg:pt-6">
+    <div className="min-h-dvh flex lg:pt-6">
       {/* Sidebar */}
       <div
         className={`lg:block ${
@@ -18,7 +18,7 @@ const ChatbotLayout = ({ children }: { children: React.ReactNode }) => {
       </div>
 
       {/* Main Content */}
-      <div className="flex-1 flex flex-col h-screen lg:h-[calc(100vh_-_24px)]">
+      <div className="flex-1 flex flex-col min-h-dvh lg:h-[calc(100dvh_-_24px)]">
         <div className="sticky top-0 z-10">
           <ChatbotNavbar
             setOpenSidebar={setOpenSidebar}
