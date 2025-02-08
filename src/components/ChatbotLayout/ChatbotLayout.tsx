@@ -26,7 +26,7 @@ const ChatbotLayout = ({ children }: { children: React.ReactNode }) => {
           />
         </div>
         {!openSidebar && (
-          <div className="w-full relative border bg-[#ecf0f2] border-[#D9D9D9] flex flex-col flex-1 lg:rounded-tl-[30px] lg:rounded-tr-[30px] overflow-y-auto">
+          <div className="w-full relative border bg-[#ecf0f2] border-[#D9D9D9] flex flex-col flex-1 lg:rounded-tl-[30px] lg:rounded-tr-[30px]">
             {children}
           </div>
         )}
