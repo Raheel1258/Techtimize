@@ -17,7 +17,7 @@ const ChatInput: React.FC<ChatInputProps> = ({
   <div className="w-[90%] lg:w-[80%] mx-auto py-4">
     <div className="relative flex items-center">
       <textarea
-        className="w-full border bg-white rounded-[18px] pl-6 py-4 lg:py-6 pr-8 lg:pr-12 focus:outline-none focus:ring-2 focus:ring-primary bg-primary-dark/[0.05]"
+        className="w-full border text-black rounded-[18px] pl-6 py-4 lg:py-6 pr-8 lg:pr-12 focus:outline-none focus:ring-2 focus:ring-primary bg-primary-dark/[0.05]"
         placeholder="Ask anything about techtimize"
         value={message}
         rows={1}
