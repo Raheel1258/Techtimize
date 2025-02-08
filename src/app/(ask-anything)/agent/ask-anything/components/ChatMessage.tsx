@@ -1,5 +1,6 @@
 import React from "react";
 import { formatRelative } from "date-fns";
+import Markdown from "react-markdown";
 
 interface ChatMessageProps {
   message: string;
@@ -12,7 +13,7 @@ const ChatMessage = ({ message, user, createdAt }: ChatMessageProps) => (
     {!user ? (
       <div className="flex justify-start">
         <div className="relative min-w-[150px] bg-primary text-white p-3 rounded-lg max-w-xs">
-          {message}
+          <Markdown>{message}</Markdown>
           <div className="absolute bottom-0 right-2 text-xs text-gray-300">
             {formatRelative(createdAt, new Date())}
           </div>
@@ -21,7 +22,7 @@ const ChatMessage = ({ message, user, createdAt }: ChatMessageProps) => (
     ) : (
       <div className="flex justify-end">
         <div className="relative min-w-[150px] bg-gray-200 text-gray-800 p-3 rounded-lg max-w-xs">
-          {message}
+          <Markdown>{message}</Markdown>
           <div className="absolute bottom-0 right-2 text-xs text-gray-400">
             {formatRelative(createdAt, new Date())}
           </div>
