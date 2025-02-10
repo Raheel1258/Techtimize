@@ -21,6 +21,7 @@ const config: Config = {
       },
       colors: {
         primary: "#069AD8",
+        "primary-dark": "#0F4C8D",
         secondary: "#0B4D8E",
         tertiary: "#4F4F4F",
         red: "#9A0000",
@@ -35,6 +36,7 @@ const config: Config = {
         service: "#3D3D3D",
         modelText: "#909090",
         projectDetails: "#898989",
+        'blue-1': "#1CB2E8",
       },
     },
   },
