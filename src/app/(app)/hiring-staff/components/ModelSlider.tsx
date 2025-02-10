@@ -1,7 +1,23 @@
-import React from "react";
+import { GET, GET_ALL_HIRING_TYPES_ENDPOINT } from "@/app/api";
 import Image from "next/image";
 
-const ModelSlider = () => {
+interface Service {
+  _id: string;
+  categoryName: string;
+  categoryIcon: string;
+  styling?: string;
+  isActive: boolean;
+  about: string;
+}
+
+const ModelSlider = async () => {
+  const response = await GET<Service[]>(GET_ALL_HIRING_TYPES_ENDPOINT);
+  if (response.status === "error") {
+    throw new Error(response.error);
+  }
+
+  const hiringTypes: Service[] = response.data;
+
   return (
     <div className="flex flex-nowrap gap-[20px] overflow-x-auto sm:overflow-hidden scrollbar-hide max-w-full">
       <div className="border flex-none flex-shrink-0 w-full sm:w-[48.5%] rounded-[10px]">

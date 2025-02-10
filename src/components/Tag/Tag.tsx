@@ -9,9 +9,9 @@ interface TagProps {
 
 const Tag: React.FC<TagProps> = ({ icon, text, className, textClass }) => {
   return (
-    <div className={`flex rounded-[7px] xl:p-[10px] p-[5px] items-center gap-[10px] ${className}`}>
+    <div className={`flex rounded-[7px] xl:p-[10px] p-[5px] items-center gap-[5px] ${className}`}>
       {icon && icon}
-      <p className={`text ${textClass}`}>{text}</p>
+      <p className={`${textClass}`}>{text}</p>
     </div>
   );
 };

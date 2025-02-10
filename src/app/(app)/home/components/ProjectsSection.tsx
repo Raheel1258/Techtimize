@@ -1,6 +1,5 @@
-import PageHeader from "@/components/PageHeader/PageHeader";
-import ProjectsList from "./components/ProjectsList";
 import { GET, GET_ALL_PROJECTS_ENDPOINT } from "@/app/api";
+import ProjectLogoSlider from "./ProjectLogoSlider";
 
 interface Service {
   _id: string;
@@ -11,21 +10,18 @@ interface Service {
   about: string;
 }
 
-const Projects = async () => {
+const ProjectsSection = async () => {
   const response = await GET<Service[]>(GET_ALL_PROJECTS_ENDPOINT);
-  console.log("All Projects: ", response);
   if (response.status === "error") {
     throw new Error(response.error);
   }
 
   const projects: Service[] = response.data;
-
   return (
-    <div>
-      <PageHeader subHeading="Projects" heading="Our Portfolio" />
-      <ProjectsList />
+    <div className="pt-20 pb-10">
+      <ProjectLogoSlider />
     </div>
   );
 };
 
-export default Projects;
+export default ProjectsSection;

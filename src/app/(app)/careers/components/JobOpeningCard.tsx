@@ -1,5 +1,5 @@
 import React from "react";
-import { SuitcaseIcon } from "../../../../../public/assets";
+import { PiSuitcaseSimpleThin } from "react-icons/pi";
 import Tag from "@/components/Tag/Tag";
 import { BsClock } from "react-icons/bs";
 import { ImLocation } from "react-icons/im";
@@ -9,9 +9,12 @@ import Link from "next/link";
 const JobOpeningCard = () => {
   return (
     <div className="border xl:h-[210px] md:h-[152px] h-[131px] bg-[#069AD8] rounded-[10px] relative flex items-end justify-end xl:w-full">
-      <div className="flex xl:h-[215px] md:h-[157px] h-[136px] border absolute w-[98.5%] bg-white xl:gap-[20px] gap-[10px] rounded-[10px] lg:px-[30px] xl:py-[25px] md:py-[20px]">
+      <div className="flex xl:h-[215px] md:h-[157px] h-[136px] border absolute w-[98.5%] bg-white xl:gap-[20px] gap-[10px] rounded-[10px] lg:px-[30px] xl:py-[25px] md:py-[20px] p-[10px]">
         <div className="">
-          <SuitcaseIcon />
+          <PiSuitcaseSimpleThin
+            color="#0697D5"
+            className="w-[20px] h-[17.5px] md:w-[40px] md:h-[37.5px]"
+          />
         </div>
         <div className="w-full flex flex-col justify-between">
           <div className="flex justify-between w-full">
@@ -20,7 +23,7 @@ const JobOpeningCard = () => {
             </h5>
             <Tag
               text="Software Engineer"
-              textClass="font-semibold text-[10px]"
+              textClass="font-semibold text-[10px] md:text-[16px]"
               className="bg-[#F7F7F7]"
             />
           </div>
@@ -28,20 +31,32 @@ const JobOpeningCard = () => {
             <div className="flex items-center xl:gap-[20px] gap-[10px]">
               <Tag
                 text="Full Time"
-                textClass="text-[10px]"
+                textClass="text-[10px] md:text-[16px]"
                 className="bg-white border"
-                icon={<BsClock size="20px" color="#069AD8" />}
+                icon={
+                  <BsClock
+                    size="20px"
+                    color="#069AD8"
+                    className="w-[15px] h-[15px]"
+                  />
+                }
               />
               <Tag
                 text="On-Site"
-                textClass="text-[10px]"
+                textClass="text-[10px] md:text-[16px]"
                 className="bg-[#F7F7F7]"
               />
               <Tag
                 text="Lahore"
-                textClass="text-[#069AD8] text-[10px]"
+                textClass="text-[#069AD8] text-[10px] md:text-[16px]"
                 className="bg-[#F2F6FF]"
-                icon={<ImLocation size="20px" color="#069AD8" />}
+                icon={
+                  <ImLocation
+                    size="20px"
+                    color="#069AD8"
+                    className="w-[10px] h-[13.17px]"
+                  />
+                }
               />
             </div>
             <Link href={"/job-description"}>
