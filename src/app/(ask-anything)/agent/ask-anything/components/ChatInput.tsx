@@ -14,23 +14,24 @@ const ChatInput: React.FC<ChatInputProps> = ({
   handleSendMessage,
   loading,
 }) => (
-  <div className="w-full p-4">
+  <div className="w-[90%] lg:w-[80%] mx-auto py-4">
     <div className="relative flex items-center">
-      <input
-        type="text"
-        className="w-full border bg-white border-gray-300 rounded-lg p-2 pr-12 focus:outline-none focus:ring-2 focus:ring-primary"
-        placeholder="Type your message..."
+      <textarea
+        className="w-full border text-black rounded-[18px] pl-6 py-4 lg:py-6 pr-8 lg:pr-12 focus:outline-none focus:ring-2 focus:ring-primary bg-primary-dark/[0.05]"
+        placeholder="Ask anything about techtimize"
         value={message}
+        rows={1}
+        autoFocus={true}
         onChange={(e) => setMessage(e.target.value)}
-        onKeyDown={(e) => e.key === "Enter" && handleSendMessage()} // Send on Enter key
+        onKeyDown={(e) => e.key === "Enter" && handleSendMessage()}
         disabled={loading}
-      />
+      ></textarea>
       <button
-        className="absolute right-2 bg-primary text-white p-2 rounded-full shadow hover:bg-primary-dark transition"
+        className="absolute right-4 bg-primary text-white p-1 lg:p-2 rounded-full shadow hover:bg-primary-dark transition"
         onClick={handleSendMessage}
         disabled={loading}
       >
-        <PiPaperPlaneRightFill className="h-5 w-5" />
+        <PiPaperPlaneRightFill className="h-4 h-4 lg:h-5 lg:w-5" />
       </button>
     </div>
   </div>
