@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+import { RxHamburgerMenu } from "react-icons/rx";
 
 interface ChatbotNavbarProps {
   setOpenSidebar: (open: boolean) => void;
@@ -11,12 +11,12 @@ const ChatbotNavbar: React.FC<ChatbotNavbarProps> = ({
   openSidebar,
 }) => {
   return (
-    <div className="sticky top-0 w-full h-[85px] bg-white z-10">
+    <div className="sticky top-0 w-full h-[85px] bg-white z-10 !h-[67px]">
       {!openSidebar && (
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-full">
           {/* Logo */}
-          <div className="flex items-center space-x-3">
-            <h2 className="text-xl sm:text-2xl font-bold text-primary">
+          <div className="flex items-center space-x-3 h-[67px]">
+            <h2 className="text-xl sm:text-2xl font-bold text-primary-dark">
               AI Chat
             </h2>
           </div>
@@ -28,7 +28,7 @@ const ChatbotNavbar: React.FC<ChatbotNavbarProps> = ({
               setOpenSidebar(!openSidebar);
             }}
           >
-            Menu
+            <RxHamburgerMenu width={20} height={20} />
           </button>
         </div>
       )}
