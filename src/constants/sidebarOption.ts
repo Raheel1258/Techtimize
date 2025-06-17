@@ -2,7 +2,7 @@ export const sidebarOption = [
   {
     id: 1,
     title: "Our Projects",
-    path: "https://www.techtimize.org/portfolio",
+    path: "https://www.techtimize.org/projects",
     icon: "/assets/svgs/Projects.svg",
   },
   // {
@@ -14,7 +14,7 @@ export const sidebarOption = [
   {
     id: 3,
     title: "Contact Us",
-    path: "https://www.techtimize.org/contact",
+    path: "https://www.techtimize.org/contact-us",
     icon: "/assets/svgs/contactus.svg",
   },
 ];
